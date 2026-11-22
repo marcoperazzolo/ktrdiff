@@ -1,0 +1,10 @@
+{
+  "directory.advanced.json": {
+    "exit": 2,
+    "stderr": ""
+  },
+  "directory.quick.json": {
+    "exit": 2,
+    "stderr": ""
+  }
+}

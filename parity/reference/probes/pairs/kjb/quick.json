@@ -1,0 +1,181 @@
+{
+  "schemaVersion" : 1,
+  "mode" : "quick",
+  "result" : "changed",
+  "summary" : {
+    "functional" : 4,
+    "layout" : 0,
+    "metadata" : 0,
+    "configuration" : 0,
+    "potentiallyFunctional" : 0,
+    "unknown" : 0
+  },
+  "hidden" : {
+    "count" : 0,
+    "byClassification" : { }
+  },
+  "metadata" : {
+    "beforeTransformation" : "Probe job",
+    "afterTransformation" : "Probe job",
+    "beforeSteps" : "2",
+    "afterSteps" : "2",
+    "documentType" : "job"
+  },
+  "graph" : {
+    "steps" : [ {
+      "logicalId" : "B2",
+      "beforeName" : "Load",
+      "afterName" : null,
+      "type" : "TRANS",
+      "beforeX" : 10,
+      "beforeY" : 10,
+      "afterX" : null,
+      "afterY" : null,
+      "status" : "removed",
+      "adapter" : "ConfiguredStepAdapter",
+      "changeCount" : 1
+    }, {
+      "logicalId" : "A3",
+      "beforeName" : null,
+      "afterName" : "Load renamed",
+      "type" : "TRANS",
+      "beforeX" : null,
+      "beforeY" : null,
+      "afterX" : 400,
+      "afterY" : 10,
+      "status" : "added",
+      "adapter" : "ConfiguredStepAdapter",
+      "changeCount" : 1
+    }, {
+      "logicalId" : "L1",
+      "beforeName" : "Start",
+      "afterName" : "Start",
+      "type" : "SPECIAL",
+      "beforeX" : 0,
+      "beforeY" : 0,
+      "afterX" : 0,
+      "afterY" : 0,
+      "status" : "unchanged",
+      "adapter" : "ConfiguredStepAdapter",
+      "changeCount" : 0
+    } ],
+    "hops" : [ {
+      "fromLogicalId" : "L1",
+      "toLogicalId" : "B2",
+      "fromName" : "Start",
+      "toName" : "Load",
+      "status" : "removed",
+      "enabled" : true
+    }, {
+      "fromLogicalId" : "L1",
+      "toLogicalId" : "A3",
+      "fromName" : "Start",
+      "toName" : "Load renamed",
+      "status" : "added",
+      "enabled" : true
+    } ]
+  },
+  "changes" : [ {
+    "id" : "c1",
+    "logicalId" : "B2",
+    "kind" : "step_removed",
+    "classification" : "functional",
+    "entity" : "step",
+    "stepType" : "TRANS",
+    "stepName" : "Load",
+    "beforeName" : "Load",
+    "afterName" : null,
+    "fromStep" : null,
+    "toStep" : null,
+    "section" : "steps",
+    "field" : null,
+    "property" : null,
+    "before" : null,
+    "after" : null,
+    "addedFragments" : [ ],
+    "removedFragments" : [ ],
+    "volatile" : false
+  }, {
+    "id" : "c2",
+    "logicalId" : "A3",
+    "kind" : "step_added",
+    "classification" : "functional",
+    "entity" : "step",
+    "stepType" : "TRANS",
+    "stepName" : "Load renamed",
+    "beforeName" : null,
+    "afterName" : "Load renamed",
+    "fromStep" : null,
+    "toStep" : null,
+    "section" : "steps",
+    "field" : null,
+    "property" : null,
+    "before" : null,
+    "after" : null,
+    "addedFragments" : [ ],
+    "removedFragments" : [ ],
+    "volatile" : false
+  }, {
+    "id" : "c3",
+    "logicalId" : null,
+    "kind" : "hop_added",
+    "classification" : "functional",
+    "entity" : "hop",
+    "stepType" : null,
+    "stepName" : null,
+    "beforeName" : null,
+    "afterName" : null,
+    "fromStep" : "Start",
+    "toStep" : "Load renamed",
+    "section" : "hops",
+    "field" : null,
+    "property" : null,
+    "before" : false,
+    "after" : true,
+    "addedFragments" : [ ],
+    "removedFragments" : [ ],
+    "volatile" : false
+  }, {
+    "id" : "c4",
+    "logicalId" : null,
+    "kind" : "hop_removed",
+    "classification" : "functional",
+    "entity" : "hop",
+    "stepType" : null,
+    "stepName" : null,
+    "beforeName" : null,
+    "afterName" : null,
+    "fromStep" : "Start",
+    "toStep" : "Load",
+    "section" : "hops",
+    "field" : null,
+    "property" : null,
+    "before" : true,
+    "after" : false,
+    "addedFragments" : [ ],
+    "removedFragments" : [ ],
+    "volatile" : false
+  } ],
+  "hiddenChanges" : [ ],
+  "warnings" : [ ],
+  "errors" : [ ],
+  "matchingDecisions" : [ {
+    "before" : "Start",
+    "after" : "Start",
+    "method" : "name",
+    "score" : 1.0,
+    "detail" : null
+  }, {
+    "before" : "Load",
+    "after" : "Load renamed",
+    "method" : "near-miss",
+    "score" : 0.603,
+    "detail" : "closest candidate below rename threshold 0.7"
+  }, {
+    "before" : null,
+    "after" : "Load renamed",
+    "method" : "unmatched",
+    "score" : 0.0,
+    "detail" : "step added"
+  } ]
+}

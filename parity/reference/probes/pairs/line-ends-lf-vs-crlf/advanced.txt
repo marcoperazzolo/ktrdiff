@@ -1,0 +1,18 @@
+Transformation: probe
+Result: changed  |  Mode: advanced
+
+Summary
+  Functional: 1
+  Layout: 0
+  Metadata: 0
+  Configuration: 0
+  Potentially functional: 0
+  Unknown: 0
+
+MODIFIED STEP
+  Read [TableInput]
+  SQL changed:
+  - WHERE id > 0
+  + WHERE id > 5
+
+

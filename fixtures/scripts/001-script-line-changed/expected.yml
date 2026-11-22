@@ -1,0 +1,35 @@
+schema_version: 1
+
+fixture:
+  id: "scripts-001"
+  category: "scripts"
+  title: "Customer code normalization changed"
+  seed: "script-flow.ktr"
+  pentaho_version: "9.4.0.0-343"
+  manually_edited: false
+
+expected:
+  result: changed
+  strict: true
+  error_code: null
+
+  changes:
+    - kind: "script_changed"
+      classification: "functional"
+      entity: "step"
+      step_type: "ModifiedJavaScriptValue"
+      step_name: "Normalize Customer Code"
+      before_name: null
+      after_name: null
+      from_step: null
+      to_step: null
+      section: "script"
+      field: null
+      property: "source"
+      before: null
+      after: null
+      added_contains:
+        - ".toUpperCase()"
+      removed_contains: []
+
+  allow_extra: []

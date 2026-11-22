@@ -1,0 +1,27 @@
+# Keep fixture KTR files byte-stable across platforms: never rewrite their EOLs.
+*.ktr -text
+fixtures/** -text
+
+# Normal text handling for sources
+* text=auto
+*.md text
+*.yml text
+*.yaml text
+*.ts text
+*.tsx text
+*.json text
+
+# Byte-stable inputs and oracle outputs (after the text rules so they take precedence)
+*.kjb -text
+*.kdb -text
+parity/** -text
+
+# Windows scripts need CRLF, unix scripts LF
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.sh text eol=lf
+
+# Semantic diff for KTR transformations (enabled by `ktrdiff git-install`)
+# *.ktr diff=ktrdiff
+# *.kjb diff=ktrdiff
+# *.kdb diff=ktrdiff

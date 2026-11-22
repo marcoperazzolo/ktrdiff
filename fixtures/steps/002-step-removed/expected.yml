@@ -1,0 +1,48 @@
+schema_version: 1
+
+fixture:
+  id: "steps-002"
+  category: "steps"
+  title: "Rejected Rows step removed"
+  seed: "canonical-flow.ktr"
+  pentaho_version: "9.4.0.0-343"
+  manually_edited: false
+
+expected:
+  result: changed
+  strict: true
+  error_code: null
+  changes:
+    - kind: "step_removed"
+      classification: "functional"
+      entity: "step"
+      step_type: "Dummy"
+      step_name: "Rejected Rows"
+      before_name: "Rejected Rows"
+      after_name: null
+      from_step: null
+      to_step: null
+      section: "steps"
+      field: null
+      property: null
+      before: null
+      after: null
+      added_contains: []
+      removed_contains: []
+    - kind: "hop_removed"
+      classification: "functional"
+      entity: "hop"
+      step_type: null
+      step_name: null
+      before_name: null
+      after_name: null
+      from_step: "Filter Valid Customers"
+      to_step: "Rejected Rows"
+      section: "hops"
+      field: null
+      property: null
+      before: true
+      after: false
+      added_contains: []
+      removed_contains: []
+  allow_extra: []

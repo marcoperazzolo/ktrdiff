@@ -1,0 +1,10 @@
+{
+  "inspect.txt": {
+    "exit": 2,
+    "stderr": "ktrdiff: [invalid_ktr] <transformation> has no <info> section — not a valid KTR document\n"
+  },
+  "validate.txt": {
+    "exit": 2,
+    "stderr": "INVALID [invalid_ktr]: <transformation> has no <info> section — not a valid KTR document\n"
+  }
+}

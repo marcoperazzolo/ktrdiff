@@ -1,0 +1,10 @@
+{
+  "inspect.txt": {
+    "exit": 2,
+    "stderr": "ktrdiff: [invalid_xml] Not a well-formed XML document: An invalid XML character (Unicode: 0x1) was found in the element content of the document.\n"
+  },
+  "validate.txt": {
+    "exit": 2,
+    "stderr": "INVALID [invalid_xml]: Not a well-formed XML document: An invalid XML character (Unicode: 0x1) was found in the element content of the document.\n"
+  }
+}

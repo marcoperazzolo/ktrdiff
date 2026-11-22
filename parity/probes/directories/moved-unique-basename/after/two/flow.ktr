@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>flow-a</name>
+    <description/>
+  </info>
+  <notepads>
+  </notepads>
+  <step>
+    <name>Generate rows</name>
+    <type>RowGenerator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+    <fields>
+      <field>
+        <name>CODE</name>
+        <type>String</type>
+        <length>20</length>
+        <nullif>X-1</nullif>
+      </field>
+    </fields>
+    <limit>5</limit>
+    <GUI><xloc>100</xloc><yloc>100</yloc><draw>Y</draw></GUI>
+  </step>
+  <step>
+    <name>Sink</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+    <GUI><xloc>300</xloc><yloc>100</yloc><draw>Y</draw></GUI>
+  </step>
+  <order>
+    <hop><from>Generate rows</from><to>Sink</to><enabled>Y</enabled></hop>
+  </order>
+</transformation>

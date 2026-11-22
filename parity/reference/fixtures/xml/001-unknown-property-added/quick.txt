@@ -1,0 +1,16 @@
+Transformation: canonical-flow.ktr
+Result: changed  |  Mode: quick
+
+Summary
+  Functional: 0
+  Layout: 0
+  Metadata: 0
+  Configuration: 0
+  Potentially functional: 0
+  Unknown: 1
+
+UNKNOWN CHANGES
+  Select Customer Fields — <ktrdiff_demo_flag>: (none) -> demo
+    at /transformation/step[2]/ktrdiff_demo_flag[1]
+
+

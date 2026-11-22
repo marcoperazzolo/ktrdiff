@@ -1,0 +1,21 @@
+Transformation: probe
+Result: changed  |  Mode: advanced
+
+Summary
+  Functional: 0
+  Layout: 0
+  Metadata: 1
+  Configuration: 0
+  Potentially functional: 0
+  Unknown: 0
+
+MODIFIED STEP
+  Read [TableInput]
+  SQL changed (formatting only):
+  - SELECT id, name FROM probe_table WHERE id > 0
+  + SELECT id,
+  +        name
+  +   FROM probe_table
+  +  WHERE id > 0
+
+

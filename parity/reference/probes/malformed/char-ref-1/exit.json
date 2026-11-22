@@ -1,0 +1,10 @@
+{
+  "inspect.txt": {
+    "exit": 2,
+    "stderr": "ktrdiff: [invalid_xml] Not a well-formed XML document: Character reference \"&#1\" is an invalid XML character.\n"
+  },
+  "validate.txt": {
+    "exit": 2,
+    "stderr": "INVALID [invalid_xml]: Not a well-formed XML document: Character reference \"&#1\" is an invalid XML character.\n"
+  }
+}

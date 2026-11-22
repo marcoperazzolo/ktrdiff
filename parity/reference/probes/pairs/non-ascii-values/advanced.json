@@ -1,0 +1,71 @@
+{
+  "schemaVersion" : 1,
+  "mode" : "advanced",
+  "result" : "changed",
+  "summary" : {
+    "functional" : 1,
+    "layout" : 0,
+    "metadata" : 0,
+    "configuration" : 0,
+    "potentiallyFunctional" : 0,
+    "unknown" : 0
+  },
+  "hidden" : {
+    "count" : 0,
+    "byClassification" : { }
+  },
+  "metadata" : {
+    "beforeTransformation" : "Città",
+    "afterTransformation" : "Città",
+    "beforeSteps" : "1",
+    "afterSteps" : "1",
+    "documentType" : "transformation"
+  },
+  "graph" : {
+    "steps" : [ {
+      "logicalId" : "L1",
+      "beforeName" : "Généré ✓",
+      "afterName" : "Généré ✓",
+      "type" : "RowGenerator",
+      "beforeX" : 10,
+      "beforeY" : 10,
+      "afterX" : 10,
+      "afterY" : 10,
+      "status" : "modified",
+      "adapter" : "ConfiguredStepAdapter",
+      "changeCount" : 1
+    } ],
+    "hops" : [ ]
+  },
+  "changes" : [ {
+    "id" : "c1",
+    "logicalId" : "L1",
+    "kind" : "field_property_changed",
+    "classification" : "functional",
+    "entity" : "step",
+    "stepType" : "RowGenerator",
+    "stepName" : "Généré ✓",
+    "beforeName" : null,
+    "afterName" : null,
+    "fromStep" : null,
+    "toStep" : null,
+    "section" : "fields",
+    "field" : "CAMPO_Ä",
+    "property" : "nullif",
+    "before" : "naïve",
+    "after" : "naïf 漢字 😀",
+    "addedFragments" : [ ],
+    "removedFragments" : [ ],
+    "volatile" : false
+  } ],
+  "hiddenChanges" : [ ],
+  "warnings" : [ ],
+  "errors" : [ ],
+  "matchingDecisions" : [ {
+    "before" : "Généré ✓",
+    "after" : "Généré ✓",
+    "method" : "name",
+    "score" : 1.0,
+    "detail" : null
+  } ]
+}

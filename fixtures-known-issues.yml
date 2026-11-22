@@ -1,0 +1,18 @@
+# Fixtures quarantined because their expected.yml is documented as inconsistent with the
+# KTR pair in the same directory. See docs/fixture-issues.md (issue 1) for the full analysis.
+# The fixture runner still executes them and reports KNOWN-ISSUE; they never count as failures
+# and a surprise pass is flagged so the quarantine can be lifted.
+#
+# History: the original steps/001 <-> steps/002 expected.yml swap was healed by the maintainer
+# (commit 75ac636 "Fix expected.yml") and steps/002 now passes. steps/001 remains quarantined
+# for the second half of the issue: the KTR pair adds a step literally named
+# "Dummy (do nothing)" while the (now correct) expectation names it "Audit Rows".
+# To lift this last quarantine, either rename the added step to "Audit Rows" in
+# fixtures/steps/001-step-added/after/canonical-flow.ktr (ideally via Spoon) or align the
+# expected step name — a maintainer decision, since fixtures are the source of truth.
+
+known_issues:
+  - fixture: "steps/001-step-added"
+    reason: >
+      expected.yml (id steps-001) declares the added step as "Audit Rows", but the KTR pair
+      adds a step named "Dummy (do nothing)" — the step was never renamed in Spoon.

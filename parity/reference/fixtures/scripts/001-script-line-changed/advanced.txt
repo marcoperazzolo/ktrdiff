@@ -1,0 +1,26 @@
+Transformation: after
+Result: changed  |  Mode: advanced
+
+Summary
+  Functional: 1
+  Layout: 0
+  Metadata: 0
+  Configuration: 0
+  Potentially functional: 0
+  Unknown: 0
+
+MODIFIED STEP
+  Normalize Customer Code [ScriptValueMod]
+
+  Script 1
+    Script changed:
+    - NORMALIZED_CODE = CUSTOMER_CODE.trim();
+    + NORMALIZED_CODE = CUSTOMER_CODE.trim().toUpperCase();
+
+TRANSFORMATION PROPERTIES
+  directory: /fixture-seeds -> /fixtures/scripts/001-normalization-changed
+  key_for_session_key: (none) -> H4sIAAAAAAAAAAMAAAAAAAAAAAA=
+  modified_date: 2026/07/14 00:17:03.469 -> 2026/07/14 11:48:25.869
+  name: script-flow -> after
+
+

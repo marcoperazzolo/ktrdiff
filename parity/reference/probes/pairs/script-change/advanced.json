@@ -1,0 +1,71 @@
+{
+  "schemaVersion" : 1,
+  "mode" : "advanced",
+  "result" : "changed",
+  "summary" : {
+    "functional" : 1,
+    "layout" : 0,
+    "metadata" : 0,
+    "configuration" : 0,
+    "potentiallyFunctional" : 0,
+    "unknown" : 0
+  },
+  "hidden" : {
+    "count" : 0,
+    "byClassification" : { }
+  },
+  "metadata" : {
+    "beforeTransformation" : "probe",
+    "afterTransformation" : "probe",
+    "beforeSteps" : "1",
+    "afterSteps" : "1",
+    "documentType" : "transformation"
+  },
+  "graph" : {
+    "steps" : [ {
+      "logicalId" : "L1",
+      "beforeName" : "Compute",
+      "afterName" : "Compute",
+      "type" : "ScriptValueMod",
+      "beforeX" : 10,
+      "beforeY" : 10,
+      "afterX" : 10,
+      "afterY" : 10,
+      "status" : "modified",
+      "adapter" : "ScriptValueModAdapter",
+      "changeCount" : 1
+    } ],
+    "hops" : [ ]
+  },
+  "changes" : [ {
+    "id" : "c1",
+    "logicalId" : "L1",
+    "kind" : "script_changed",
+    "classification" : "functional",
+    "entity" : "step",
+    "stepType" : "ScriptValueMod",
+    "stepName" : "Compute",
+    "beforeName" : null,
+    "afterName" : null,
+    "fromStep" : null,
+    "toStep" : null,
+    "section" : "script",
+    "field" : "Script 1",
+    "property" : "source",
+    "before" : null,
+    "after" : null,
+    "addedFragments" : [ "if (x && y) {", "  OUT = \"c\";", "// done" ],
+    "removedFragments" : [ "if (x) {", "  OUT = \"b\";" ],
+    "volatile" : false
+  } ],
+  "hiddenChanges" : [ ],
+  "warnings" : [ ],
+  "errors" : [ ],
+  "matchingDecisions" : [ {
+    "before" : "Compute",
+    "after" : "Compute",
+    "method" : "name",
+    "score" : 1.0,
+    "detail" : null
+  } ]
+}

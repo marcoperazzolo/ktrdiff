@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    // No DOM and no Node types: any platform global used by mistake fails type-checking.
+    "lib": ["ES2023"],
+    "types": []
+  },
+  "include": ["src/**/*.ts", "test/**/*.ts"],
+  // Parity tests read reference files through Node: type-checked by parity/tsconfig.json.
+  "exclude": ["test/parity.test.ts", "test/private-parity.test.ts", "test/xml-probes.test.ts",
+    "test/match-parity.test.ts", "test/summary-fixtures.test.ts"]
+}

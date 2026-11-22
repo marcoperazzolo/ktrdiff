@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>probe</name>
+    <description/>
+  </info>
+  <notepads>
+  </notepads>
+  <step>
+    <name>Copy one</name>
+    <type>RowGenerator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+    <fields>
+      <field>
+        <name>CODE</name>
+        <type>String</type>
+        <length>20</length>
+        <nullif>X-2</nullif>
+      </field>
+    </fields>
+    <limit>3</limit>
+    <GUI><xloc>10</xloc><yloc>10</yloc><draw>Y</draw></GUI>
+  </step>
+  <step>
+    <name>Copy two</name>
+    <type>RowGenerator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+    <fields>
+      <field>
+        <name>CODE</name>
+        <type>String</type>
+        <length>20</length>
+        <nullif>X-2</nullif>
+      </field>
+    </fields>
+    <limit>3</limit>
+    <GUI><xloc>10</xloc><yloc>200</yloc><draw>Y</draw></GUI>
+  </step>
+  <step>
+    <name>Sink</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+    <GUI><xloc>300</xloc><yloc>10</yloc><draw>Y</draw></GUI>
+  </step>
+  <order>
+    <hop><from>Copy one</from><to>Sink</to><enabled>Y</enabled></hop>
+    <hop><from>Copy two</from><to>Sink</to><enabled>Y</enabled></hop>
+  </order>
+</transformation>

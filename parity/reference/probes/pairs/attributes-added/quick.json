@@ -1,0 +1,71 @@
+{
+  "schemaVersion" : 1,
+  "mode" : "quick",
+  "result" : "changed",
+  "summary" : {
+    "functional" : 0,
+    "layout" : 0,
+    "metadata" : 0,
+    "configuration" : 0,
+    "potentiallyFunctional" : 0,
+    "unknown" : 1
+  },
+  "hidden" : {
+    "count" : 0,
+    "byClassification" : { }
+  },
+  "metadata" : {
+    "beforeTransformation" : "probe",
+    "afterTransformation" : "probe",
+    "beforeSteps" : "1",
+    "afterSteps" : "1",
+    "documentType" : "transformation"
+  },
+  "graph" : {
+    "steps" : [ {
+      "logicalId" : "L1",
+      "beforeName" : "Sink",
+      "afterName" : "Sink",
+      "type" : "Dummy",
+      "beforeX" : 10,
+      "beforeY" : 10,
+      "afterX" : 10,
+      "afterY" : 10,
+      "status" : "unknown",
+      "adapter" : "generic",
+      "changeCount" : 1
+    } ],
+    "hops" : [ ]
+  },
+  "changes" : [ {
+    "id" : "c1",
+    "logicalId" : "L1",
+    "kind" : "unknown_change",
+    "classification" : "unknown",
+    "entity" : "xml",
+    "stepType" : "Dummy",
+    "stepName" : "Sink",
+    "beforeName" : null,
+    "afterName" : null,
+    "fromStep" : null,
+    "toStep" : null,
+    "section" : "unknown",
+    "field" : null,
+    "property" : "custom",
+    "before" : null,
+    "after" : "",
+    "addedFragments" : [ ],
+    "removedFragments" : [ ],
+    "volatile" : false
+  } ],
+  "hiddenChanges" : [ ],
+  "warnings" : [ ],
+  "errors" : [ ],
+  "matchingDecisions" : [ {
+    "before" : "Sink",
+    "after" : "Sink",
+    "method" : "name",
+    "score" : 1.0,
+    "detail" : null
+  } ]
+}

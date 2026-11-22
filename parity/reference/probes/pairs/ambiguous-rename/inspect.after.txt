@@ -1,0 +1,10 @@
+Transformation: probe
+Steps: 3
+  Copy one                                 [RowGenerator]           adapter=ConfiguredStepAdapter pos=10,10
+  Copy two                                 [RowGenerator]           adapter=ConfiguredStepAdapter pos=10,200
+  Sink                                     [Dummy]                  adapter=generic pos=300,10
+Hops: 2
+  Copy one -> Sink
+  Copy two -> Sink
+Notes: 0
+Connections: 0

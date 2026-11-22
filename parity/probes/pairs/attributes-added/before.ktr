@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>probe</name>
+    <description/>
+  </info>
+  <notepads>
+  </notepads>
+  <step>
+    <name>Sink</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+    <GUI><xloc>10</xloc><yloc>10</yloc><draw>Y</draw></GUI>
+  </step>
+</transformation>

@@ -1,0 +1,10 @@
+{
+  "inspect.txt": {
+    "exit": 2,
+    "stderr": "ktrdiff: [invalid_xml] Not a well-formed XML document: The entity name must immediately follow the '&' in the entity reference.\n"
+  },
+  "validate.txt": {
+    "exit": 2,
+    "stderr": "INVALID [invalid_xml]: Not a well-formed XML document: The entity name must immediately follow the '&' in the entity reference.\n"
+  }
+}

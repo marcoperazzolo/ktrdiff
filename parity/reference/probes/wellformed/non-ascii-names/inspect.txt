@@ -1,0 +1,6 @@
+Transformation: Città €
+Steps: 1
+  Généré ✓                                 [RowGenerator]           adapter=ConfiguredStepAdapter pos=10,10
+Hops: 0
+Notes: 0
+Connections: 0

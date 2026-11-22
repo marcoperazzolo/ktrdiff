@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>probe</name>
+    <description/>
+  </info>
+  <notepads>
+  </notepads>
+  <step>
+    <name>Read</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+    <connection>probe_db</connection>
+    <sql><![CDATA[SELECT * FROM t WHERE a < 1 AND b > 2]]></sql>
+    <execute_each_row>N</execute_each_row>
+    <limit>0</limit>
+    <GUI><xloc>10</xloc><yloc>10</yloc><draw>Y</draw></GUI>
+  </step>
+</transformation>

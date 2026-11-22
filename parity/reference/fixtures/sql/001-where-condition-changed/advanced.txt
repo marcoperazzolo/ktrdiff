@@ -1,0 +1,23 @@
+Transformation: after
+Result: changed  |  Mode: advanced
+
+Summary
+  Functional: 1
+  Layout: 0
+  Metadata: 0
+  Configuration: 0
+  Potentially functional: 0
+  Unknown: 0
+
+MODIFIED STEP
+  Read Demo Customers [TableInput]
+  SQL changed:
+  + AND deleted = 0
+
+TRANSFORMATION PROPERTIES
+  directory: /fixture-seeds -> /fixtures/sql/001-where-condition-changed
+  key_for_session_key: (none) -> H4sIAAAAAAAAAAMAAAAAAAAAAAA=
+  modified_date: 2026/07/14 00:20:53.036 -> 2026/07/14 11:42:51.982
+  name: sql-flow.ktr -> after
+
+

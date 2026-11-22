@@ -1,0 +1,30 @@
+Transformation: after
+Result: changed  |  Mode: advanced
+
+Summary
+  Functional: 1
+  Layout: 1
+  Metadata: 0
+  Configuration: 0
+  Potentially functional: 0
+  Unknown: 0
+
+MODIFIED STEP
+  Select Customer Fields [SelectValues]
+
+  CUSTOMER_CODE
+    Type:
+    - String
+    + None
+      (None = keep the incoming type; the forced conversion to String is removed)
+  Position:
+  - 368,384
+  + 368,320
+
+TRANSFORMATION PROPERTIES
+  directory: /fixture-seeds -> /fixtures/mixed/001-functional-and-layout
+  key_for_session_key: (none) -> H4sIAAAAAAAAAAMAAAAAAAAAAAA=
+  modified_date: 2026/07/14 00:09:18.018 -> 2026/07/14 12:40:06.744
+  name: canonical-flow.ktr -> after
+
+

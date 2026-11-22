@@ -1,0 +1,70 @@
+{
+  "schemaVersion" : 1,
+  "scope" : "directory",
+  "summary" : {
+    "added" : 0,
+    "removed" : 0,
+    "renamed" : 1,
+    "modified" : 0,
+    "unchanged" : 0,
+    "error" : 0
+  },
+  "warnings" : [ ],
+  "files" : [ {
+    "beforePath" : "old-name.ktr",
+    "afterPath" : "new-name.ktr",
+    "status" : "renamed",
+    "method" : "semantic",
+    "comparison" : {
+      "schemaVersion" : 1,
+      "mode" : "quick",
+      "result" : "unchanged",
+      "summary" : {
+        "functional" : 0,
+        "layout" : 0,
+        "metadata" : 0,
+        "configuration" : 0,
+        "potentiallyFunctional" : 0,
+        "unknown" : 0
+      },
+      "hidden" : {
+        "count" : 0,
+        "byClassification" : { }
+      },
+      "metadata" : {
+        "beforeTransformation" : "flow-b",
+        "afterTransformation" : "flow-b",
+        "beforeSteps" : "1",
+        "afterSteps" : "1",
+        "documentType" : "transformation"
+      },
+      "graph" : {
+        "steps" : [ {
+          "logicalId" : "L1",
+          "beforeName" : "Read",
+          "afterName" : "Read",
+          "type" : "TableInput",
+          "beforeX" : 10,
+          "beforeY" : 10,
+          "afterX" : 10,
+          "afterY" : 10,
+          "status" : "unchanged",
+          "adapter" : "TableInputAdapter",
+          "changeCount" : 0
+        } ],
+        "hops" : [ ]
+      },
+      "changes" : [ ],
+      "hiddenChanges" : [ ],
+      "warnings" : [ ],
+      "errors" : [ ],
+      "matchingDecisions" : [ {
+        "before" : "Read",
+        "after" : "Read",
+        "method" : "name",
+        "score" : 1.0,
+        "detail" : null
+      } ]
+    }
+  } ]
+}

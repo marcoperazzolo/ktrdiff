@@ -1,0 +1,95 @@
+{
+  "schemaVersion" : 1,
+  "scope" : "directory",
+  "summary" : {
+    "added" : 0,
+    "removed" : 0,
+    "renamed" : 0,
+    "modified" : 0,
+    "unchanged" : 1,
+    "error" : 0
+  },
+  "warnings" : [ ],
+  "files" : [ {
+    "beforePath" : "a.ktr",
+    "afterPath" : "a.ktr",
+    "status" : "unchanged",
+    "method" : "path",
+    "comparison" : {
+      "schemaVersion" : 1,
+      "mode" : "quick",
+      "result" : "unchanged",
+      "summary" : {
+        "functional" : 0,
+        "layout" : 0,
+        "metadata" : 0,
+        "configuration" : 0,
+        "potentiallyFunctional" : 0,
+        "unknown" : 0
+      },
+      "hidden" : {
+        "count" : 0,
+        "byClassification" : { }
+      },
+      "metadata" : {
+        "beforeTransformation" : "flow-a",
+        "afterTransformation" : "flow-a",
+        "beforeSteps" : "2",
+        "afterSteps" : "2",
+        "documentType" : "transformation"
+      },
+      "graph" : {
+        "steps" : [ {
+          "logicalId" : "L1",
+          "beforeName" : "Generate rows",
+          "afterName" : "Generate rows",
+          "type" : "RowGenerator",
+          "beforeX" : 100,
+          "beforeY" : 100,
+          "afterX" : 100,
+          "afterY" : 100,
+          "status" : "unchanged",
+          "adapter" : "ConfiguredStepAdapter",
+          "changeCount" : 0
+        }, {
+          "logicalId" : "L2",
+          "beforeName" : "Sink",
+          "afterName" : "Sink",
+          "type" : "Dummy",
+          "beforeX" : 300,
+          "beforeY" : 100,
+          "afterX" : 300,
+          "afterY" : 100,
+          "status" : "unchanged",
+          "adapter" : "generic",
+          "changeCount" : 0
+        } ],
+        "hops" : [ {
+          "fromLogicalId" : "L1",
+          "toLogicalId" : "L2",
+          "fromName" : "Generate rows",
+          "toName" : "Sink",
+          "status" : "unchanged",
+          "enabled" : true
+        } ]
+      },
+      "changes" : [ ],
+      "hiddenChanges" : [ ],
+      "warnings" : [ ],
+      "errors" : [ ],
+      "matchingDecisions" : [ {
+        "before" : "Generate rows",
+        "after" : "Generate rows",
+        "method" : "name",
+        "score" : 1.0,
+        "detail" : null
+      }, {
+        "before" : "Sink",
+        "after" : "Sink",
+        "method" : "name",
+        "score" : 1.0,
+        "detail" : null
+      } ]
+    }
+  } ]
+}

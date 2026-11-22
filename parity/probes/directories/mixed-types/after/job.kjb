@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job>
+  <name>Probe job</name>
+  <entries>
+    <entry><name>Start</name><type>SPECIAL</type><nr>0</nr><start>Y</start><xloc>0</xloc><yloc>0</yloc></entry>
+    <entry><name>Load</name><type>TRANS</type><nr>0</nr><filename>child.ktr</filename><xloc>20</xloc><yloc>10</yloc></entry>
+  </entries>
+  <hops>
+    <hop><from>Start</from><to>Load</to><enabled>Y</enabled><evaluation>Y</evaluation><unconditional>N</unconditional></hop>
+  </hops>
+</job>

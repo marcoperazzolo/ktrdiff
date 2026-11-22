@@ -1,0 +1,6 @@
+Transformation: probe
+Steps: 1
+  Sink                                     [Dummy]                  adapter=generic pos=10,10
+Hops: 0
+Notes: 0
+Connections: 0

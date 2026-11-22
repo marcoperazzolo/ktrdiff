@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job>
+  <name>Probe job</name>
+  <entries>
+    <entry><name>Start</name><type>SPECIAL</type><nr>0</nr><start>Y</start><xloc>0</xloc><yloc>0</yloc></entry>
+    <entry><name>Load renamed</name><type>TRANS</type><nr>0</nr><filename>${PROBE_DIR}/other.ktr</filename><xloc>400</xloc><yloc>10</yloc></entry>
+  </entries>
+  <hops>
+    <hop><from>Start</from><to>Load renamed</to><enabled>Y</enabled><evaluation>N</evaluation><unconditional>N</unconditional></hop>
+  </hops>
+</job>

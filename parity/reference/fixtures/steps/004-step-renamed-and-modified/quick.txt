@@ -1,0 +1,28 @@
+Transformation: after
+Result: changed  |  Mode: quick
+
+Summary
+  Functional: 2
+  Layout: 0
+  Metadata: 0
+  Configuration: 0
+  Potentially functional: 0
+  Unknown: 0
+  Hidden by quick mode: 4
+
+STEP RENAMED
+  - Select Customer Fields
+  + Normalize Customer Fields  [SelectValues]  (confidence 0.954)
+
+MODIFIED STEP
+  Normalize Customer Fields [SelectValues]
+
+  CUSTOMER_CODE
+    Length:
+    - 20
+    + 50
+
+HIDDEN BY QUICK MODE
+  4 metadata changes
+  (run with --mode advanced to show everything)
+

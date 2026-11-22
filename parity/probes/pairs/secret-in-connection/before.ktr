@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>probe</name>
+    <description/>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>probe_db</name>
+    <server>host-a</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>probe</database>
+    <port>5432</port>
+    <username>probe_user</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10df90acde</password>
+  </connection>
+  <step>
+    <name>Read</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+    <connection>probe_db</connection>
+    <sql>SELECT 1</sql>
+    <execute_each_row>N</execute_each_row>
+    <limit>0</limit>
+    <GUI><xloc>10</xloc><yloc>10</yloc><draw>Y</draw></GUI>
+  </step>
+</transformation>

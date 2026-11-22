@@ -1,0 +1,17 @@
+Transformation: after
+Result: changed  |  Mode: quick
+
+Summary
+  Functional: 0
+  Layout: 1
+  Metadata: 0
+  Configuration: 0
+  Potentially functional: 0
+  Unknown: 0
+  Hidden by quick mode: 5
+
+HIDDEN BY QUICK MODE
+  1 layout change
+  4 metadata changes
+  (run with --mode advanced to show everything)
+

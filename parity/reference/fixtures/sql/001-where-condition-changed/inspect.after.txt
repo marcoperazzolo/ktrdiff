@@ -1,0 +1,9 @@
+Transformation: after
+Steps: 2
+  Read Demo Customers                      [TableInput]             adapter=TableInputAdapter pos=224,304
+  SQL Result                               [Dummy]                  adapter=generic pos=352,304
+Hops: 1
+  Read Demo Customers -> SQL Result
+Notes: 0
+Connections: 1
+  DEMO_DB

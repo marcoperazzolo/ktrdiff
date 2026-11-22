@@ -1,0 +1,32 @@
+schema_version: 1
+
+fixture:
+  id: "xml-001"
+  category: "xml"
+  title: "Unknown step property added"
+  seed: "canonical-flow.ktr"
+  pentaho_version: "9.4.0.0-343"
+  manually_edited: false
+
+expected:
+  result: changed
+  strict: true
+  error_code: null
+  changes:
+    - kind: "unknown_change"
+      classification: "unknown"
+      entity: "xml"
+      step_type: "SelectValues"
+      step_name: "Select Customer Fields"
+      before_name: null
+      after_name: null
+      from_step: null
+      to_step: null
+      section: "unknown"
+      field: null
+      property: "ktrdiff_demo_flag"
+      before: null
+      after: "demo"
+      added_contains: []
+      removed_contains: []
+  allow_extra: []

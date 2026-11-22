@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>flow-c</name>
+    <description/>
+  </info>
+  <notepads>
+  </notepads>
+  <step>
+    <name>Compute</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+    <compatible>N</compatible>
+    <jsScripts>
+      <jsScript>
+        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>var OUT = "c";</jsScript_script>
+      </jsScript>
+    </jsScripts>
+    <fields>
+      <field><name>OUT</name><rename>OUT</rename><type>String</type><length>20</length><precision>-1</precision><replace>N</replace></field>
+    </fields>
+    <GUI><xloc>10</xloc><yloc>10</yloc><draw>Y</draw></GUI>
+  </step>
+</transformation>

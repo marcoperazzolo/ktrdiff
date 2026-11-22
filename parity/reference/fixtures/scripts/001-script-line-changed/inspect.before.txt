@@ -1,0 +1,10 @@
+Transformation: script-flow
+Steps: 3
+  Generate Script Rows                     [RowGenerator]           adapter=ConfiguredStepAdapter pos=256,304
+  Normalize Customer Code                  [ScriptValueMod]         adapter=ScriptValueModAdapter pos=400,304
+  Script Result                            [Dummy]                  adapter=generic pos=544,304
+Hops: 2
+  Generate Script Rows -> Normalize Customer Code
+  Normalize Customer Code -> Script Result
+Notes: 0
+Connections: 0

@@ -1,0 +1,20 @@
+Transformation: Città
+Result: changed  |  Mode: advanced
+
+Summary
+  Functional: 1
+  Layout: 0
+  Metadata: 0
+  Configuration: 0
+  Potentially functional: 0
+  Unknown: 0
+
+MODIFIED STEP
+  Généré ✓ [RowGenerator]
+
+  CAMPO_Ä
+    Nullif:
+    - naïve
+    + naïf 漢字 😀
+
+

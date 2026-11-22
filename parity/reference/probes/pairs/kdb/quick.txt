@@ -1,0 +1,20 @@
+Transformation: probe_db
+Result: changed  |  Mode: quick
+
+Summary
+  Functional: 0
+  Layout: 0
+  Metadata: 0
+  Configuration: 2
+  Potentially functional: 0
+  Unknown: 0
+
+CONNECTIONS
+  probe_db — Password:
+    - [REDACTED]
+    + [REDACTED]
+  probe_db — Server:
+    - host-a
+    + host-b
+
+

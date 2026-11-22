@@ -1,0 +1,30 @@
+{
+  "advanced.json": {
+    "exit": 0,
+    "stderr": ""
+  },
+  "quick.json": {
+    "exit": 0,
+    "stderr": ""
+  },
+  "advanced.txt": {
+    "exit": 0,
+    "stderr": ""
+  },
+  "quick.txt": {
+    "exit": 0,
+    "stderr": ""
+  },
+  "advanced.html": {
+    "exit": 0,
+    "stderr": ""
+  },
+  "inspect.before.txt": {
+    "exit": 2,
+    "stderr": "ktrdiff: [unsupported_document] Well-formed XML but the root element is <job>, not <transformation>\n"
+  },
+  "inspect.after.txt": {
+    "exit": 2,
+    "stderr": "ktrdiff: [unsupported_document] Well-formed XML but the root element is <job>, not <transformation>\n"
+  }
+}

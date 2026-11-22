@@ -1,0 +1,10 @@
+{
+  "inspect.txt": {
+    "exit": 2,
+    "stderr": "ktrdiff: [invalid_xml] Not a well-formed XML document: Attribute \"a\" was already specified for element \"x\".\n"
+  },
+  "validate.txt": {
+    "exit": 2,
+    "stderr": "INVALID [invalid_xml]: Not a well-formed XML document: Attribute \"a\" was already specified for element \"x\".\n"
+  }
+}

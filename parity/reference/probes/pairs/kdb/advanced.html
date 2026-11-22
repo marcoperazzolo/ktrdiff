@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:;">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KTRDiff — probe_db</title>
+<style>body{font-family:'Segoe UI',system-ui,sans-serif;margin:0;background:#f4f6f8;color:#1c2733}header{background:#1c2733;color:#fff;padding:14px 24px}h1{margin:0;font-size:20px}.files{margin:6px 0 0;font-size:13px;color:#cfd8e3}.tag{padding:1px 7px;border-radius:9px;font-size:11px;font-weight:600}.tag.before{background:#8a4a4a}.tag.after{background:#3f7a4f}.summary{display:flex;gap:10px;padding:16px 24px;flex-wrap:wrap}.card{background:#fff;border-radius:8px;padding:10px 16px;min-width:96px;box-shadow:0 1px 3px rgba(0,0,0,.12);border-top:3px solid #999}.card.zero{opacity:.45}.card .num{font-size:22px;font-weight:700}.card .lbl{font-size:11px;color:#5a6b7d}.card.functional{border-color:#c62828}.card.layout{border-color:#9e9e9e}.card.metadata{border-color:#1565c0}.card.configuration{border-color:#00838f}.card.potentially-functional{border-color:#ef6c00}.card.unknown{border-color:#6a1b9a}.modes{padding:0 24px 8px}.modebtn{margin-right:6px;padding:5px 14px;border:1px solid #b8c4d0;border-radius:6px;background:#fff;cursor:pointer;font-weight:600}.modebtn.active{background:#1c2733;color:#fff;border-color:#1c2733}#customopts label{font-size:12px;margin-right:8px}.hiddeninfo{padding:0 24px;color:#5a6b7d;font-size:13px;margin:4px 0}.warnings,.errors{margin:8px 24px;padding:10px 14px;background:#fff7e0;border:1px solid #e5cf7a;border-radius:8px}.errors{background:#fdecea;border-color:#e5a49d}.warnings h2,.errors h2{margin:0 0 6px;font-size:14px}.changes{padding:8px 24px 32px}.changes h2{font-size:16px}.nochanges{background:#e7f5ec;border:1px solid #9fd4b1;border-radius:8px;padding:12px 16px}.chg{background:#fff;border-radius:8px;margin-bottom:8px;box-shadow:0 1px 2px rgba(0,0,0,.10)}.chg summary{padding:9px 14px;cursor:pointer;display:flex;gap:8px;align-items:center;flex-wrap:wrap}.chg .kind{font-family:Consolas,monospace;font-size:12px;color:#5a6b7d}.badge{font-size:10px;font-weight:700;text-transform:uppercase;padding:2px 8px;border-radius:9px;color:#fff;background:#999}.badge.functional{background:#c62828}.badge.layout{background:#9e9e9e}.badge.metadata{background:#1565c0}.badge.configuration{background:#00838f}.badge.potentially-functional{background:#ef6c00}.badge.unknown{background:#6a1b9a}.body{padding:4px 16px 12px}.vals{display:flex;gap:12px;flex-wrap:wrap}.val{flex:1;min-width:200px}.val span{font-size:11px;font-weight:700;text-transform:uppercase;color:#5a6b7d}.val pre{margin:4px 0;padding:8px 10px;border-radius:6px;white-space:pre-wrap;word-break:break-word}.val.before pre{background:#fdecea}.val.after pre{background:#e7f5ec}pre.diff{background:#0f1720;color:#d7e1ec;padding:10px 12px;border-radius:6px;overflow:auto;font-size:13px}pre.diff .del{color:#ff8a80;display:block}pre.diff .add{color:#7fd88f;display:block}.raw pre{background:#eef2f6;padding:8px;border-radius:6px;overflow:auto;font-size:12px}.xmlpath{font-size:12px;color:#5a6b7d}.conf{font-size:12px;color:#5a6b7d}footer{padding:12px 24px;color:#5a6b7d;font-size:12px}.chg[hidden]{display:none}</style>
+</head>
+<body>
+<header><h1>KTRDiff report</h1><p class="files"><span class="tag before">Previous</span> probe_db &nbsp;→&nbsp; <span class="tag after">Current</span> probe_db</p></header>
+<section class="summary"><div class="card functional zero"><div class="num">0</div><div class="lbl">Functional</div></div><div class="card layout zero"><div class="num">0</div><div class="lbl">Layout</div></div><div class="card metadata zero"><div class="num">0</div><div class="lbl">Metadata</div></div><div class="card configuration"><div class="num">2</div><div class="lbl">Configuration</div></div><div class="card potentially-functional zero"><div class="num">0</div><div class="lbl">Potentially functional</div></div><div class="card unknown zero"><div class="num">0</div><div class="lbl">Unknown</div></div></section>
+<p class="hiddeninfo" id="hiddeninfo"></p>
+<section class="modes"><button data-mode="quick" class="modebtn">Quick</button><button data-mode="advanced" class="modebtn">Advanced</button><button data-mode="custom" class="modebtn">Custom</button><span id="customopts" hidden> <label><input type="checkbox" class="inc" value="functional" checked> functional</label> <label><input type="checkbox" class="inc" value="layout" > layout</label> <label><input type="checkbox" class="inc" value="metadata" checked> metadata</label> <label><input type="checkbox" class="inc" value="configuration" checked> configuration</label> <label><input type="checkbox" class="inc" value="potentially-functional" checked> potentially-functional</label> <label><input type="checkbox" class="inc" value="unknown" checked> unknown</label> <label><input type="checkbox" id="steppos"> step positions</label> <label><input type="checkbox" id="notepos"> note positions</label> <label><input type="checkbox" id="xmlpaths"> XML paths</label></span></section>
+<section class="changes"><h2>Changes</h2>
+<details class="chg" data-cls="configuration" data-kind="connection_changed" data-prop="password" data-volatile="false"><summary><span class="badge configuration">configuration</span> <span class="kind">connection_changed</span> <strong>connection</strong> · password</summary><div class="body"><div class="vals"><div class="val before"><span>before</span><pre>[REDACTED]</pre></div><div class="val after"><span>after</span><pre>[REDACTED]</pre></div></div><p class="xmlpath"><code>/connection/password[1]</code></p></div></details>
+<details class="chg" data-cls="configuration" data-kind="connection_changed" data-prop="server" data-volatile="false"><summary><span class="badge configuration">configuration</span> <span class="kind">connection_changed</span> <strong>connection</strong> · server</summary><div class="body"><div class="vals"><div class="val before"><span>before</span><pre>host-a</pre></div><div class="val after"><span>after</span><pre>host-b</pre></div></div><p class="xmlpath"><code>/connection/server[1]</code></p></div></details>
+</section>
+<footer>Generated by KTRDiff · schemaVersion 1 · quick mode hides 0 change(s)</footer>
+<script>var MODE='advanced';
+function fmtOnly(c){var k=c.getAttribute('data-kind'),p=c.getAttribute('data-prop');return (k==='sql_changed'&&p==='formatting')||(k==='script_changed'&&p==='whitespace');}
+function visible(c){var cls=c.getAttribute('data-cls'),vol=c.getAttribute('data-volatile')==='true';
+ if(MODE==='advanced')return true;
+ if(MODE==='quick')return !vol&&cls!=='layout'&&!fmtOnly(c);
+ if(vol)return false;
+ var inc={};document.querySelectorAll('.inc').forEach(function(x){inc[x.value]=x.checked;});
+ if(!inc[cls])return false;
+ var k=c.getAttribute('data-kind');
+ if(k==='step_moved'&&!document.getElementById('steppos').checked)return false;
+ if(k==='note_moved'&&!document.getElementById('notepos').checked)return false;
+ return true;}
+function apply(){var hid=0,tot=0;document.querySelectorAll('.chg').forEach(function(c){
+ if(c.classList.contains('raw'))return; tot++;
+ if(visible(c)){c.removeAttribute('hidden');}else{c.setAttribute('hidden','');hid++;}});
+document.getElementById('hiddeninfo').textContent=hid>0?hid+' change(s) hidden by '+MODE+' mode':'';
+document.querySelectorAll('.modebtn').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-mode')===MODE);});
+document.getElementById('customopts').hidden=(MODE!=='custom');
+var sx=document.getElementById('xmlpaths').checked;
+document.querySelectorAll('.xmlpath').forEach(function(x){x.style.display=sx?'':'none';});}
+document.querySelectorAll('.modebtn').forEach(function(b){b.addEventListener('click',function(){MODE=b.getAttribute('data-mode');apply();});});
+document.querySelectorAll('#customopts input').forEach(function(x){x.addEventListener('change',apply);});
+apply();</script>
+</body></html>

@@ -1,0 +1,16 @@
+schema_version: 1
+
+fixture:
+  id: "basic-001"
+  category: "basic"
+  title: "Identical canonical transformations"
+  seed: "canonical-flow.ktr"
+  pentaho_version: "9.4.0.0-343"
+  manually_edited: false
+
+expected:
+  result: unchanged
+  strict: true
+  error_code: null
+  changes: []
+  allow_extra: []

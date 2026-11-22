@@ -1,0 +1,10 @@
+{
+  "inspect.txt": {
+    "exit": 2,
+    "stderr": "ktrdiff: [invalid_xml] Not a well-formed XML document: The character sequence \"]]>\" must not appear in content unless used to mark the end of a CDATA section.\n"
+  },
+  "validate.txt": {
+    "exit": 2,
+    "stderr": "INVALID [invalid_xml]: Not a well-formed XML document: The character sequence \"]]>\" must not appear in content unless used to mark the end of a CDATA section.\n"
+  }
+}

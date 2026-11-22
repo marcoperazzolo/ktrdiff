@@ -1,0 +1,31 @@
+{
+  "schemaVersion" : 1,
+  "mode" : "advanced",
+  "result" : "error",
+  "summary" : {
+    "functional" : 0,
+    "layout" : 0,
+    "metadata" : 0,
+    "configuration" : 0,
+    "potentiallyFunctional" : 0,
+    "unknown" : 0
+  },
+  "hidden" : {
+    "count" : 0,
+    "byClassification" : { }
+  },
+  "metadata" : { },
+  "graph" : {
+    "steps" : [ ],
+    "hops" : [ ]
+  },
+  "changes" : [ ],
+  "hiddenChanges" : [ ],
+  "warnings" : [ ],
+  "errors" : [ {
+    "code" : "invalid_xml",
+    "message" : "Not a well-formed XML document: Content is not allowed in prolog.",
+    "side" : "after"
+  } ],
+  "matchingDecisions" : [ ]
+}

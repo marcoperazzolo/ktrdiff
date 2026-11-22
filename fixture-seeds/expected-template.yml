@@ -1,0 +1,234 @@
+
+# Versione dello schema delle fixture.
+# Non modificarla finché non viene introdotta una nuova versione incompatibile.
+schema_version: 1
+
+fixture:
+  # Identificativo univoco e stabile della fixture.
+  # Formato consigliato: <categoria>-<numero>
+  # Esempi: basic-001, steps-003, sql-001
+  id: ""
+
+  # Descrizione breve e leggibile del caso.
+  title: ""
+
+  # Seed dal quale sono stati copiati before.ktr e after.ktr.
+  # Valori normalmente usati:
+  # - canonical-flow.ktr
+  # - script-flow.ktr
+  # - sql-flow.ktr
+  # - empty-transformation.ktr
+  seed: ""
+
+  # Versione di Pentaho Data Integration / Spoon usata per creare i file.
+  # Esempio: "9.4.0.0-343"
+  # Può rimanere vuoto temporaneamente.
+  pentaho_version: ""
+
+  # false: fixture creata e modificata esclusivamente tramite Spoon.
+  # true: almeno uno dei file è stato modificato manualmente come XML o testo.
+  manually_edited: false
+
+expected:
+  # Risultato generale atteso.
+  #
+  # Valori:
+  # - unchanged: nessuna modifica semantica o rilevante
+  # - changed: una o più modifiche rilevate
+  # - error: il confronto deve terminare con un errore controllato
+  result: changed
+
+  # true:
+  #   non devono essere rilevate modifiche ulteriori rispetto a quelle
+  #   dichiarate in changes, salvo quelle elencate in allow_extra.
+  #
+  # false:
+  #   è sufficiente che siano presenti le modifiche dichiarate.
+  #
+  # Per le fixture semplici usare quasi sempre true.
+  strict: true
+
+  # Codice di errore atteso.
+  # Usare null quando result non è error.
+  #
+  # Possibili valori iniziali:
+  # - invalid_xml
+  # - unsupported_document
+  # - invalid_ktr
+  # - duplicate_step_names
+  # - ambiguous_step_match
+  error_code: null
+
+  # Elenco delle modifiche semantiche attese.
+  # Per una fixture identica usare: changes: []
+  #
+  # Duplicare il blocco per ogni modifica prevista.
+  changes:
+    - # Tipo di modifica.
+      #
+      # Valori iniziali consigliati:
+      # - step_added
+      # - step_removed
+      # - step_renamed
+      # - step_moved
+      # - step_property_changed
+      # - field_added
+      # - field_removed
+      # - field_renamed
+      # - field_property_changed
+      # - hop_added
+      # - hop_removed
+      # - hop_changed
+      # - filter_changed
+      # - sql_changed
+      # - script_changed
+      # - note_added
+      # - note_removed
+      # - note_changed
+      # - note_moved
+      # - connection_changed
+      # - transformation_property_changed
+      # - unknown_change
+      kind: ""
+
+      # Categoria semantica della modifica.
+      #
+      # Valori:
+      # - functional: modifica il comportamento della trasformazione
+      # - layout: posizione o aspetto grafico
+      # - metadata: descrizione, nota o informazione non esecutiva
+      # - configuration: configurazione generale o indiretta
+      # - potentially-functional: significato non ancora certo
+      # - unknown: proprietà non interpretata
+      classification: ""
+
+      # Tipo di entità modificata.
+      #
+      # Valori:
+      # - transformation
+      # - step
+      # - hop
+      # - note
+      # - connection
+      # - xml
+      entity: ""
+
+      # Tipo tecnico dello step Pentaho.
+      #
+      # Esempi:
+      # - SelectValues
+      # - FilterRows
+      # - TableInput
+      # - ModifiedJavaScriptValue
+      # - Dummy
+      # - RowGenerator
+      #
+      # Usare null se la modifica non riguarda uno step
+      # o se il tipo non è importante per il test.
+      step_type: null
+
+      # Nome dello step coinvolto quando non viene rinominato.
+      #
+      # Esempio:
+      # step_name: "Select Customer Fields"
+      #
+      # Per step_renamed usare normalmente null e compilare
+      # before_name e after_name.
+      step_name: null
+
+      # Nome precedente e successivo.
+      # Utili soprattutto per step_renamed, field_renamed
+      # o transformation_property_changed.
+      before_name: null
+      after_name: null
+
+      # Origine e destinazione di un hop.
+      # Compilare solo per hop_added, hop_removed o hop_changed.
+      from_step: null
+      to_step: null
+
+      # Sezione logica interna dello step.
+      #
+      # Esempi:
+      # - metadata
+      # - fields
+      # - condition
+      # - sql
+      # - script
+      # - position
+      # - error_handling
+      # - connection
+      section: null
+
+      # Campo ETL coinvolto.
+      #
+      # Esempi:
+      # - CUSTOMER_CODE
+      # - AMOUNT
+      # - CREATED_AT
+      #
+      # Usare null se non riguarda un campo.
+      field: null
+
+      # Proprietà modificata.
+      #
+      # Esempi:
+      # - type
+      # - length
+      # - precision
+      # - name
+      # - position
+      # - query
+      # - source
+      # - value
+      # - operator
+      # - enabled
+      # - text
+      property: null
+
+      # Valore precedente e successivo.
+      #
+      # Possono essere:
+      # - stringhe
+      # - numeri
+      # - booleani
+      # - null
+      # - oggetti YAML, ad esempio coordinate
+      #
+      # Possono rimanere null quando il contenuto viene verificato
+      # tramite added_contains e removed_contains.
+      before: null
+      after: null
+
+      # Frammenti che devono essere presenti nel contenuto aggiunto.
+      # Utili soprattutto per SQL e script.
+      added_contains: []
+
+      # Frammenti che devono essere presenti nel contenuto rimosso.
+      removed_contains: []
+
+  # Categorie di differenze aggiuntive ammesse oltre a quelle dichiarate.
+  #
+  # Usare soltanto quando Spoon modifica automaticamente qualcosa.
+  #
+  # Possibili valori:
+  # - layout
+  # - metadata
+  # - configuration
+  # - unknown
+  #
+  # Per una fixture controllata usare normalmente [].
+  allow_extra: []
+
+# Regole pratiche
+
+1. Mantieni sempre la stessa struttura principale.
+2. Per i file identici usa `changes: []`.
+3. Per una fixture normale dichiara soltanto le differenze semanticamente attese.
+4. Non copiare tutto l’XML in `expected.yml`.
+5. Per SQL e script usa `added_contains` e `removed_contains`.
+6. Per rename usa `before_name` e `after_name`.
+7. Per le modifiche interne di uno step rinominato usa in `step_name` il nome presente in `after.ktr`.
+8. Usa `strict: true` per tutte le fixture semplici.
+9. Usa `allow_extra` solo per differenze automatiche realmente verificate.
+10. Non aggiungere nuovi campi allo schema durante la creazione delle fixture: eventuali necessità future devono essere rappresentate con `kind`, `section`, `property`, `before` e `after`.

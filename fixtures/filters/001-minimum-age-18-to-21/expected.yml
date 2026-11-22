@@ -1,0 +1,34 @@
+schema_version: 1
+
+fixture:
+  id: "filters-001"
+  category: "filters"
+  title: "Minimum age changed from 18 to 21"
+  seed: "canonical-flow.ktr"
+  pentaho_version: "9.4.0.0-343"
+  manually_edited: false
+
+expected:
+  result: changed
+  strict: true
+  error_code: null
+
+changes:
+  - kind: "filter_changed"
+    classification: "functional"
+    entity: "step"
+    step_type: "FilterRows"
+    step_name: "Filter Valid Customers"
+    before_name: null
+    after_name: null
+    from_step: null
+    to_step: null
+    section: "condition"
+    field: "AGE"
+    property: "value"
+    before: 18
+    after: 21
+    added_contains: []
+    removed_contains: []
+
+allow_extra: []

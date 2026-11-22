@@ -1,0 +1,48 @@
+schema_version: 1
+
+fixture:
+  id: "hops-001"
+  category: "hops"
+  title: "Hop target changed from Filter Valid Customers to Accepted Rows"
+  seed: "canonical-flow.ktr"
+  pentaho_version: "9.4.0.0-343"
+  manually_edited: false
+
+expected:
+  result: changed
+  strict: true
+  error_code: null
+  changes:
+    - kind: "hop_removed"
+      classification: "functional"
+      entity: "hop"
+      step_type: null
+      step_name: null
+      before_name: null
+      after_name: null
+      from_step: "Select Customer Fields"
+      to_step: "Filter Valid Customers"
+      section: "hops"
+      field: null
+      property: null
+      before: true
+      after: false
+      added_contains: []
+      removed_contains: []
+    - kind: "hop_added"
+      classification: "functional"
+      entity: "hop"
+      step_type: null
+      step_name: null
+      before_name: null
+      after_name: null
+      from_step: "Select Customer Fields"
+      to_step: "Accepted Rows"
+      section: "hops"
+      field: null
+      property: null
+      before: false
+      after: true
+      added_contains: []
+      removed_contains: []
+  allow_extra: []

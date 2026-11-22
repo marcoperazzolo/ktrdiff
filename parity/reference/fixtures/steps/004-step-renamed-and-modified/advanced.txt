@@ -1,0 +1,30 @@
+Transformation: after
+Result: changed  |  Mode: advanced
+
+Summary
+  Functional: 2
+  Layout: 0
+  Metadata: 0
+  Configuration: 0
+  Potentially functional: 0
+  Unknown: 0
+
+STEP RENAMED
+  - Select Customer Fields
+  + Normalize Customer Fields  [SelectValues]  (confidence 0.954)
+
+MODIFIED STEP
+  Normalize Customer Fields [SelectValues]
+
+  CUSTOMER_CODE
+    Length:
+    - 20
+    + 50
+
+TRANSFORMATION PROPERTIES
+  directory: /fixture-seeds -> /fixtures/steps/004-step-renamed-and-modified
+  key_for_session_key: (none) -> H4sIAAAAAAAAAAMAAAAAAAAAAAA=
+  modified_date: 2026/07/14 00:09:18.018 -> 2026/07/14 12:36:10.512
+  name: canonical-flow.ktr -> after
+
+

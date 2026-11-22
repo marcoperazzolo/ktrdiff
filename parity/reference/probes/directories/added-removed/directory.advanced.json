@@ -1,0 +1,287 @@
+{
+  "schemaVersion" : 1,
+  "scope" : "directory",
+  "summary" : {
+    "added" : 1,
+    "removed" : 1,
+    "renamed" : 0,
+    "modified" : 0,
+    "unchanged" : 1,
+    "error" : 0
+  },
+  "warnings" : [ ],
+  "files" : [ {
+    "beforePath" : null,
+    "afterPath" : "added.ktr",
+    "status" : "added",
+    "method" : "unmatched",
+    "comparison" : {
+      "schemaVersion" : 1,
+      "mode" : "advanced",
+      "result" : "changed",
+      "summary" : {
+        "functional" : 1,
+        "layout" : 0,
+        "metadata" : 0,
+        "configuration" : 0,
+        "potentiallyFunctional" : 0,
+        "unknown" : 0
+      },
+      "hidden" : {
+        "count" : 0,
+        "byClassification" : { }
+      },
+      "metadata" : {
+        "beforeTransformation" : "",
+        "afterTransformation" : "flow-c",
+        "beforeSteps" : "0",
+        "afterSteps" : "1",
+        "documentType" : "transformation"
+      },
+      "graph" : {
+        "steps" : [ {
+          "logicalId" : "A1",
+          "beforeName" : null,
+          "afterName" : "Compute",
+          "type" : "ScriptValueMod",
+          "beforeX" : null,
+          "beforeY" : null,
+          "afterX" : 10,
+          "afterY" : 10,
+          "status" : "added",
+          "adapter" : "ScriptValueModAdapter",
+          "changeCount" : 1
+        } ],
+        "hops" : [ ]
+      },
+      "changes" : [ {
+        "id" : "c1",
+        "logicalId" : null,
+        "kind" : "transformation_property_changed",
+        "classification" : "metadata",
+        "entity" : "transformation",
+        "stepType" : null,
+        "stepName" : null,
+        "beforeName" : null,
+        "afterName" : null,
+        "fromStep" : null,
+        "toStep" : null,
+        "section" : "storage",
+        "field" : null,
+        "property" : "name",
+        "before" : null,
+        "after" : "flow-c",
+        "addedFragments" : [ ],
+        "removedFragments" : [ ],
+        "volatile" : true
+      }, {
+        "id" : "c2",
+        "logicalId" : "A1",
+        "kind" : "step_added",
+        "classification" : "functional",
+        "entity" : "step",
+        "stepType" : "ScriptValueMod",
+        "stepName" : "Compute",
+        "beforeName" : null,
+        "afterName" : "Compute",
+        "fromStep" : null,
+        "toStep" : null,
+        "section" : "steps",
+        "field" : null,
+        "property" : null,
+        "before" : null,
+        "after" : null,
+        "addedFragments" : [ ],
+        "removedFragments" : [ ],
+        "volatile" : false
+      } ],
+      "hiddenChanges" : [ ],
+      "warnings" : [ ],
+      "errors" : [ ],
+      "matchingDecisions" : [ {
+        "before" : null,
+        "after" : "Compute",
+        "method" : "unmatched",
+        "score" : 0.0,
+        "detail" : "step added"
+      } ]
+    }
+  }, {
+    "beforePath" : "kept.ktr",
+    "afterPath" : "kept.ktr",
+    "status" : "unchanged",
+    "method" : "path",
+    "comparison" : {
+      "schemaVersion" : 1,
+      "mode" : "advanced",
+      "result" : "unchanged",
+      "summary" : {
+        "functional" : 0,
+        "layout" : 0,
+        "metadata" : 0,
+        "configuration" : 0,
+        "potentiallyFunctional" : 0,
+        "unknown" : 0
+      },
+      "hidden" : {
+        "count" : 0,
+        "byClassification" : { }
+      },
+      "metadata" : {
+        "beforeTransformation" : "flow-a",
+        "afterTransformation" : "flow-a",
+        "beforeSteps" : "2",
+        "afterSteps" : "2",
+        "documentType" : "transformation"
+      },
+      "graph" : {
+        "steps" : [ {
+          "logicalId" : "L1",
+          "beforeName" : "Generate rows",
+          "afterName" : "Generate rows",
+          "type" : "RowGenerator",
+          "beforeX" : 100,
+          "beforeY" : 100,
+          "afterX" : 100,
+          "afterY" : 100,
+          "status" : "unchanged",
+          "adapter" : "ConfiguredStepAdapter",
+          "changeCount" : 0
+        }, {
+          "logicalId" : "L2",
+          "beforeName" : "Sink",
+          "afterName" : "Sink",
+          "type" : "Dummy",
+          "beforeX" : 300,
+          "beforeY" : 100,
+          "afterX" : 300,
+          "afterY" : 100,
+          "status" : "unchanged",
+          "adapter" : "generic",
+          "changeCount" : 0
+        } ],
+        "hops" : [ {
+          "fromLogicalId" : "L1",
+          "toLogicalId" : "L2",
+          "fromName" : "Generate rows",
+          "toName" : "Sink",
+          "status" : "unchanged",
+          "enabled" : true
+        } ]
+      },
+      "changes" : [ ],
+      "hiddenChanges" : [ ],
+      "warnings" : [ ],
+      "errors" : [ ],
+      "matchingDecisions" : [ {
+        "before" : "Generate rows",
+        "after" : "Generate rows",
+        "method" : "name",
+        "score" : 1.0,
+        "detail" : null
+      }, {
+        "before" : "Sink",
+        "after" : "Sink",
+        "method" : "name",
+        "score" : 1.0,
+        "detail" : null
+      } ]
+    }
+  }, {
+    "beforePath" : "removed.ktr",
+    "afterPath" : null,
+    "status" : "removed",
+    "method" : "unmatched",
+    "comparison" : {
+      "schemaVersion" : 1,
+      "mode" : "advanced",
+      "result" : "changed",
+      "summary" : {
+        "functional" : 1,
+        "layout" : 0,
+        "metadata" : 0,
+        "configuration" : 0,
+        "potentiallyFunctional" : 0,
+        "unknown" : 0
+      },
+      "hidden" : {
+        "count" : 0,
+        "byClassification" : { }
+      },
+      "metadata" : {
+        "beforeTransformation" : "flow-b",
+        "afterTransformation" : "",
+        "beforeSteps" : "1",
+        "afterSteps" : "0",
+        "documentType" : "transformation"
+      },
+      "graph" : {
+        "steps" : [ {
+          "logicalId" : "B1",
+          "beforeName" : "Read",
+          "afterName" : null,
+          "type" : "TableInput",
+          "beforeX" : 10,
+          "beforeY" : 10,
+          "afterX" : null,
+          "afterY" : null,
+          "status" : "removed",
+          "adapter" : "TableInputAdapter",
+          "changeCount" : 1
+        } ],
+        "hops" : [ ]
+      },
+      "changes" : [ {
+        "id" : "c1",
+        "logicalId" : null,
+        "kind" : "transformation_property_changed",
+        "classification" : "metadata",
+        "entity" : "transformation",
+        "stepType" : null,
+        "stepName" : null,
+        "beforeName" : null,
+        "afterName" : null,
+        "fromStep" : null,
+        "toStep" : null,
+        "section" : "storage",
+        "field" : null,
+        "property" : "name",
+        "before" : "flow-b",
+        "after" : null,
+        "addedFragments" : [ ],
+        "removedFragments" : [ ],
+        "volatile" : true
+      }, {
+        "id" : "c2",
+        "logicalId" : "B1",
+        "kind" : "step_removed",
+        "classification" : "functional",
+        "entity" : "step",
+        "stepType" : "TableInput",
+        "stepName" : "Read",
+        "beforeName" : "Read",
+        "afterName" : null,
+        "fromStep" : null,
+        "toStep" : null,
+        "section" : "steps",
+        "field" : null,
+        "property" : null,
+        "before" : null,
+        "after" : null,
+        "addedFragments" : [ ],
+        "removedFragments" : [ ],
+        "volatile" : false
+      } ],
+      "hiddenChanges" : [ ],
+      "warnings" : [ ],
+      "errors" : [ ],
+      "matchingDecisions" : [ {
+        "before" : "Read",
+        "after" : null,
+        "method" : "unmatched",
+        "score" : 0.0,
+        "detail" : "step removed"
+      } ]
+    }
+  } ]
+}

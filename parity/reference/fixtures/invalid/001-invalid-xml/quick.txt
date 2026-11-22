@@ -1,0 +1,6 @@
+Transformation: (unnamed)
+Result: error  |  Mode: quick
+
+ERRORS
+  [invalid_xml] (after) Not a well-formed XML document: Content is not allowed in prolog.
+

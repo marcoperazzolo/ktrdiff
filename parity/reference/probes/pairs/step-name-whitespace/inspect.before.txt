@@ -1,0 +1,8 @@
+Transformation: probe
+Steps: 2
+  Alpha                                    [Dummy]                  adapter=generic pos=10,10
+  Beta                                     [Dummy]                  adapter=generic pos=50,10
+Hops: 1
+  Alpha -> Beta
+Notes: 0
+Connections: 0

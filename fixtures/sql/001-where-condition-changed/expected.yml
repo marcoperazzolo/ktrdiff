@@ -1,0 +1,35 @@
+schema_version: 1
+
+fixture:
+  id: "sql-001"
+  category: "sql"
+  title: "SQL WHERE condition added"
+  seed: "sql-flow.ktr"
+  pentaho_version: "9.4.0.0-343"
+  manually_edited: false
+
+expected:
+  result: changed
+  strict: true
+  error_code: null
+
+  changes:
+    - kind: "sql_changed"
+      classification: "functional"
+      entity: "step"
+      step_type: "TableInput"
+      step_name: "Read Demo Customers"
+      before_name: null
+      after_name: null
+      from_step: null
+      to_step: null
+      section: "sql"
+      field: null
+      property: "query"
+      before: null
+      after: null
+      added_contains:
+        - "AND deleted = 0"
+      removed_contains: []
+
+  allow_extra: []

@@ -1,0 +1,25 @@
+# Build output
+dist/
+node_modules/
+out-tsc/
+# Oracle worktree and jar (parity harness)
+.oracle/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Spoon workspace artifacts
+.meta/
+
+# Local test documents, never committed
+private-fixtures/*
+!private-fixtures/.gitkeep
+
+# Logs
+*.log

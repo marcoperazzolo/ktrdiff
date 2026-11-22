@@ -1,0 +1,22 @@
+Transformation: probe
+Result: changed  |  Mode: advanced
+
+Summary
+  Functional: 2
+  Layout: 0
+  Metadata: 0
+  Configuration: 0
+  Potentially functional: 0
+  Unknown: 0
+
+STEP RENAMED
+  - Original
+  + Renamed  [RowGenerator]  (confidence 0.786)
+
+MODIFIED STEP
+  Renamed [RowGenerator]
+  Limit:
+  - 3
+  + 4
+
+

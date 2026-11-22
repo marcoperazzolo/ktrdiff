@@ -1,0 +1,97 @@
+{
+  "schemaVersion" : 1,
+  "mode" : "quick",
+  "result" : "changed",
+  "summary" : {
+    "functional" : 1,
+    "layout" : 0,
+    "metadata" : 0,
+    "configuration" : 0,
+    "potentiallyFunctional" : 0,
+    "unknown" : 0
+  },
+  "hidden" : {
+    "count" : 0,
+    "byClassification" : { }
+  },
+  "metadata" : {
+    "beforeTransformation" : "probe",
+    "afterTransformation" : "probe",
+    "beforeSteps" : "2",
+    "afterSteps" : "2",
+    "documentType" : "transformation"
+  },
+  "graph" : {
+    "steps" : [ {
+      "logicalId" : "L1",
+      "beforeName" : "Alpha",
+      "afterName" : "Alpha",
+      "type" : "Dummy",
+      "beforeX" : 10,
+      "beforeY" : 10,
+      "afterX" : 10,
+      "afterY" : 10,
+      "status" : "unchanged",
+      "adapter" : "generic",
+      "changeCount" : 0
+    }, {
+      "logicalId" : "L2",
+      "beforeName" : "Beta",
+      "afterName" : "Beta ",
+      "type" : "Dummy",
+      "beforeX" : 50,
+      "beforeY" : 10,
+      "afterX" : 50,
+      "afterY" : 10,
+      "status" : "renamed",
+      "adapter" : "generic",
+      "changeCount" : 1
+    } ],
+    "hops" : [ {
+      "fromLogicalId" : "L1",
+      "toLogicalId" : "L2",
+      "fromName" : "Alpha",
+      "toName" : "Beta ",
+      "status" : "unchanged",
+      "enabled" : true
+    } ]
+  },
+  "changes" : [ {
+    "id" : "c1",
+    "logicalId" : "L2",
+    "kind" : "step_renamed",
+    "classification" : "functional",
+    "entity" : "step",
+    "stepType" : "Dummy",
+    "stepName" : null,
+    "beforeName" : "Beta",
+    "afterName" : "Beta ",
+    "fromStep" : null,
+    "toStep" : null,
+    "section" : "identity",
+    "field" : null,
+    "property" : "name",
+    "before" : "Beta",
+    "after" : "Beta ",
+    "addedFragments" : [ ],
+    "removedFragments" : [ ],
+    "volatile" : false,
+    "confidence" : 1.0
+  } ],
+  "hiddenChanges" : [ ],
+  "warnings" : [ ],
+  "errors" : [ ],
+  "matchingDecisions" : [ {
+    "before" : "Alpha",
+    "after" : "Alpha",
+    "method" : "name",
+    "score" : 1.0,
+    "detail" : null
+  }, {
+    "before" : "Beta",
+    "after" : "Beta ",
+    "method" : "fingerprint",
+    "score" : 1.0,
+    "detail" : "identical semantic content, name differs"
+  } ]
+}

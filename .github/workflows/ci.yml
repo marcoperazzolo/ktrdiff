@@ -1,0 +1,48 @@
+# CI of the public engine repository (published from the private development repository by
+# scripts/publish-engine.mjs): the engine, the CLI, the golden fixtures and the parity tests.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  engine:
+    name: Engine, CLI and parity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install
+        run: npm ci
+
+      - name: Verify (typecheck, core purity, tests, golden fixtures, parity, CLI bundle)
+        run: npm run verify
+
+      - name: Every Java test has a TypeScript twin
+        run: npm run check:ported
+
+      - name: Upload CLI bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: ktrdiff-cli
+          path: packages/cli/dist/ktrdiff.mjs
+
+  audit:
+    name: npm dependency audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: npm audit (non-blocking report)
+        run: npm audit --audit-level=high || true

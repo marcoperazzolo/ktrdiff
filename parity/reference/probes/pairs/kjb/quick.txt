@@ -1,0 +1,23 @@
+Transformation: Probe job
+Result: changed  |  Mode: quick
+
+Summary
+  Functional: 4
+  Layout: 0
+  Metadata: 0
+  Configuration: 0
+  Potentially functional: 0
+  Unknown: 0
+
+STEP REMOVED
+  Load [TRANS]
+
+STEP ADDED
+  Load renamed [TRANS]
+
+HOP TARGET CHANGED
+  Start
+  - Load
+  + Load renamed
+
+

@@ -1,0 +1,16 @@
+schema_version: 1
+
+fixture:
+  id: "invalid-001"
+  category: "invalid"
+  title: "Invalid XML document"
+  seed: "canonical-flow.ktr"
+  pentaho_version: "9.4.0.0-343"
+  manually_edited: false
+
+expected:
+  result: error
+  strict: true
+  error_code: "invalid_xml"
+  changes: []
+  allow_extra: []

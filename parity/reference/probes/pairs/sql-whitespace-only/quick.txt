@@ -1,0 +1,16 @@
+Transformation: probe
+Result: changed  |  Mode: quick
+
+Summary
+  Functional: 0
+  Layout: 0
+  Metadata: 1
+  Configuration: 0
+  Potentially functional: 0
+  Unknown: 0
+  Hidden by quick mode: 1
+
+HIDDEN BY QUICK MODE
+  1 metadata change
+  (run with --mode advanced to show everything)
+

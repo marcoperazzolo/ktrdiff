@@ -1,0 +1,16 @@
+Transformation: probe
+Result: changed  |  Mode: advanced
+
+Summary
+  Functional: 0
+  Layout: 0
+  Metadata: 0
+  Configuration: 0
+  Potentially functional: 0
+  Unknown: 1
+
+UNKNOWN CHANGES
+  Sink — <custom>: (none) -> 
+    at /transformation/step[1]/custom[1]
+
+

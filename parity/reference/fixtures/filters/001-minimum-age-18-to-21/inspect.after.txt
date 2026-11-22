@@ -1,0 +1,14 @@
+Transformation: after
+Steps: 5
+  Accepted Rows                            [Dummy]                  adapter=generic pos=656,320
+  Filter Valid Customers                   [FilterRows]             adapter=FilterRowsAdapter pos=512,384
+  Generate Demo rows                       [RowGenerator]           adapter=ConfiguredStepAdapter pos=240,384
+  Rejected Rows                            [Dummy]                  adapter=generic pos=656,416
+  Select Customer Fields                   [SelectValues]           adapter=SelectValuesAdapter pos=368,384
+Hops: 4
+  Generate Demo rows -> Select Customer Fields
+  Select Customer Fields -> Filter Valid Customers
+  Filter Valid Customers -> Accepted Rows
+  Filter Valid Customers -> Rejected Rows
+Notes: 0
+Connections: 0

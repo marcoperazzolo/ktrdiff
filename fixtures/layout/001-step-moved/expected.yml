@@ -1,0 +1,32 @@
+schema_version: 1
+
+fixture:
+  id: "layout-001"
+  category: "layout"
+  title: "Select Customer Fields moved"
+  seed: "canonical-flow.ktr"
+  pentaho_version: "9.4.0.0-343"
+  manually_edited: false
+
+expected:
+  result: changed
+  strict: true
+  error_code: null
+  changes:
+    - kind: "step_moved"
+      classification: "layout"
+      entity: "step"
+      step_type: "SelectValues"
+      step_name: "Select Customer Fields"
+      before_name: null
+      after_name: null
+      from_step: null
+      to_step: null
+      section: "position"
+      field: null
+      property: "position"
+      before: null
+      after: null
+      added_contains: []
+      removed_contains: []
+  allow_extra: []

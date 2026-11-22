@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connection>
+  <name>probe_db</name>
+  <server>host-b</server>
+  <type>POSTGRESQL</type>
+  <access>Native</access>
+  <database>probe</database>
+  <port>5432</port>
+  <username>probe_user</username>
+  <password>Encrypted 2be98afc86aa7f2e4cb79ce71ce9afdf1</password>
+</connection>

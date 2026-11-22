@@ -1,0 +1,11 @@
+{
+  // Node-side parity code: the case discovery reads files, so it cannot live in the core
+  // program (no Node types there). The core tests that need it are type-checked here instead.
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["node"]
+  },
+  "include": ["lib/**/*.ts", "../packages/core/test/parity.test.ts", "../packages/core/test/private-parity.test.ts",
+    "../packages/core/test/xml-probes.test.ts", "../packages/core/test/match-parity.test.ts",
+    "../packages/core/test/summary-fixtures.test.ts"]
+}

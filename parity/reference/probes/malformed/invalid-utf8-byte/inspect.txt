@@ -1,0 +1,8 @@
+Transformation: probe
+Steps: 2
+  Generate rows                            [RowGenerator]           adapter=ConfiguredStepAdapter pos=100,100
+  Sink �                                   [Dummy]                  adapter=generic pos=300,100
+Hops: 1
+  Generate rows -> Sink
+Notes: 0
+Connections: 0

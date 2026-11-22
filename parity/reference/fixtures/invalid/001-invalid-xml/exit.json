@@ -1,0 +1,30 @@
+{
+  "advanced.json": {
+    "exit": 2,
+    "stderr": ""
+  },
+  "quick.json": {
+    "exit": 2,
+    "stderr": ""
+  },
+  "advanced.txt": {
+    "exit": 2,
+    "stderr": ""
+  },
+  "quick.txt": {
+    "exit": 2,
+    "stderr": ""
+  },
+  "advanced.html": {
+    "exit": 2,
+    "stderr": ""
+  },
+  "inspect.before.txt": {
+    "exit": 0,
+    "stderr": ""
+  },
+  "inspect.after.txt": {
+    "exit": 2,
+    "stderr": "ktrdiff: [invalid_xml] Not a well-formed XML document: Content is not allowed in prolog.\n"
+  }
+}

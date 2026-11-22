@@ -1,0 +1,71 @@
+{
+  "schemaVersion" : 1,
+  "mode" : "advanced",
+  "result" : "changed",
+  "summary" : {
+    "functional" : 0,
+    "layout" : 0,
+    "metadata" : 1,
+    "configuration" : 0,
+    "potentiallyFunctional" : 0,
+    "unknown" : 0
+  },
+  "hidden" : {
+    "count" : 0,
+    "byClassification" : { }
+  },
+  "metadata" : {
+    "beforeTransformation" : "probe",
+    "afterTransformation" : "probe",
+    "beforeSteps" : "1",
+    "afterSteps" : "1",
+    "documentType" : "transformation"
+  },
+  "graph" : {
+    "steps" : [ {
+      "logicalId" : "L1",
+      "beforeName" : "Read",
+      "afterName" : "Read",
+      "type" : "TableInput",
+      "beforeX" : 10,
+      "beforeY" : 10,
+      "afterX" : 10,
+      "afterY" : 10,
+      "status" : "modified",
+      "adapter" : "TableInputAdapter",
+      "changeCount" : 1
+    } ],
+    "hops" : [ ]
+  },
+  "changes" : [ {
+    "id" : "c1",
+    "logicalId" : "L1",
+    "kind" : "sql_changed",
+    "classification" : "metadata",
+    "entity" : "step",
+    "stepType" : "TableInput",
+    "stepName" : "Read",
+    "beforeName" : null,
+    "afterName" : null,
+    "fromStep" : null,
+    "toStep" : null,
+    "section" : "sql",
+    "field" : null,
+    "property" : "formatting",
+    "before" : null,
+    "after" : null,
+    "addedFragments" : [ "SELECT id,", "       name", "  FROM probe_table", " WHERE id > 0" ],
+    "removedFragments" : [ "SELECT id, name FROM probe_table WHERE id > 0" ],
+    "volatile" : false
+  } ],
+  "hiddenChanges" : [ ],
+  "warnings" : [ ],
+  "errors" : [ ],
+  "matchingDecisions" : [ {
+    "before" : "Read",
+    "after" : "Read",
+    "method" : "name",
+    "score" : 1.0,
+    "detail" : null
+  } ]
+}

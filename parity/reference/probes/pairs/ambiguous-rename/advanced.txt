@@ -1,0 +1,32 @@
+Transformation: probe
+Result: changed  |  Mode: advanced
+
+Summary
+  Functional: 6
+  Layout: 0
+  Metadata: 0
+  Configuration: 0
+  Potentially functional: 0
+  Unknown: 0
+
+WARNINGS
+  [ambiguous_step_match] Multiple rename candidates with similar scores — steps kept as removed/added. best: Original -> Copy one (0.771); rivals: Original -> Copy two (0.745);
+
+STEP ADDED
+  Copy one [RowGenerator]
+
+STEP ADDED
+  Copy two [RowGenerator]
+
+STEP REMOVED
+  Original [RowGenerator]
+
+HOP SOURCE CHANGED
+  -> Sink
+  - Original
+  + Copy two
+
+HOP ADDED
+  Copy one -> Sink
+
+

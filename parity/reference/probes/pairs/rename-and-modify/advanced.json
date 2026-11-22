@@ -1,0 +1,117 @@
+{
+  "schemaVersion" : 1,
+  "mode" : "advanced",
+  "result" : "changed",
+  "summary" : {
+    "functional" : 2,
+    "layout" : 0,
+    "metadata" : 0,
+    "configuration" : 0,
+    "potentiallyFunctional" : 0,
+    "unknown" : 0
+  },
+  "hidden" : {
+    "count" : 0,
+    "byClassification" : { }
+  },
+  "metadata" : {
+    "beforeTransformation" : "probe",
+    "afterTransformation" : "probe",
+    "beforeSteps" : "2",
+    "afterSteps" : "2",
+    "documentType" : "transformation"
+  },
+  "graph" : {
+    "steps" : [ {
+      "logicalId" : "L2",
+      "beforeName" : "Original",
+      "afterName" : "Renamed",
+      "type" : "RowGenerator",
+      "beforeX" : 10,
+      "beforeY" : 10,
+      "afterX" : 10,
+      "afterY" : 10,
+      "status" : "renamed",
+      "adapter" : "ConfiguredStepAdapter",
+      "changeCount" : 2
+    }, {
+      "logicalId" : "L1",
+      "beforeName" : "Sink",
+      "afterName" : "Sink",
+      "type" : "Dummy",
+      "beforeX" : 300,
+      "beforeY" : 10,
+      "afterX" : 300,
+      "afterY" : 10,
+      "status" : "unchanged",
+      "adapter" : "generic",
+      "changeCount" : 0
+    } ],
+    "hops" : [ {
+      "fromLogicalId" : "L2",
+      "toLogicalId" : "L1",
+      "fromName" : "Renamed",
+      "toName" : "Sink",
+      "status" : "unchanged",
+      "enabled" : true
+    } ]
+  },
+  "changes" : [ {
+    "id" : "c1",
+    "logicalId" : "L2",
+    "kind" : "step_renamed",
+    "classification" : "functional",
+    "entity" : "step",
+    "stepType" : "RowGenerator",
+    "stepName" : null,
+    "beforeName" : "Original",
+    "afterName" : "Renamed",
+    "fromStep" : null,
+    "toStep" : null,
+    "section" : "identity",
+    "field" : null,
+    "property" : "name",
+    "before" : "Original",
+    "after" : "Renamed",
+    "addedFragments" : [ ],
+    "removedFragments" : [ ],
+    "volatile" : false,
+    "confidence" : 0.786
+  }, {
+    "id" : "c2",
+    "logicalId" : "L2",
+    "kind" : "step_property_changed",
+    "classification" : "functional",
+    "entity" : "step",
+    "stepType" : "RowGenerator",
+    "stepName" : "Renamed",
+    "beforeName" : null,
+    "afterName" : null,
+    "fromStep" : null,
+    "toStep" : null,
+    "section" : "limit",
+    "field" : null,
+    "property" : "limit",
+    "before" : "3",
+    "after" : "4",
+    "addedFragments" : [ ],
+    "removedFragments" : [ ],
+    "volatile" : false
+  } ],
+  "hiddenChanges" : [ ],
+  "warnings" : [ ],
+  "errors" : [ ],
+  "matchingDecisions" : [ {
+    "before" : "Sink",
+    "after" : "Sink",
+    "method" : "name",
+    "score" : 1.0,
+    "detail" : null
+  }, {
+    "before" : "Original",
+    "after" : "Renamed",
+    "method" : "similarity",
+    "score" : 0.786,
+    "detail" : "probable rename with modification (round 1)"
+  } ]
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion" : 1,
+  "mode" : "advanced",
+  "result" : "changed",
+  "summary" : {
+    "functional" : 0,
+    "layout" : 0,
+    "metadata" : 0,
+    "configuration" : 2,
+    "potentiallyFunctional" : 0,
+    "unknown" : 0
+  },
+  "hidden" : {
+    "count" : 0,
+    "byClassification" : { }
+  },
+  "metadata" : {
+    "beforeTransformation" : "probe_db",
+    "afterTransformation" : "probe_db",
+    "beforeSteps" : "0",
+    "afterSteps" : "0",
+    "documentType" : "connection"
+  },
+  "graph" : {
+    "steps" : [ ],
+    "hops" : [ ]
+  },
+  "changes" : [ {
+    "id" : "c1",
+    "logicalId" : null,
+    "kind" : "connection_changed",
+    "classification" : "configuration",
+    "entity" : "connection",
+    "stepType" : null,
+    "stepName" : null,
+    "beforeName" : "probe_db",
+    "afterName" : "probe_db",
+    "fromStep" : null,
+    "toStep" : null,
+    "section" : "connection",
+    "field" : null,
+    "property" : "password",
+    "before" : "[REDACTED]",
+    "after" : "[REDACTED]",
+    "addedFragments" : [ ],
+    "removedFragments" : [ ],
+    "volatile" : false
+  }, {
+    "id" : "c2",
+    "logicalId" : null,
+    "kind" : "connection_changed",
+    "classification" : "configuration",
+    "entity" : "connection",
+    "stepType" : null,
+    "stepName" : null,
+    "beforeName" : "probe_db",
+    "afterName" : "probe_db",
+    "fromStep" : null,
+    "toStep" : null,
+    "section" : "connection",
+    "field" : null,
+    "property" : "server",
+    "before" : "host-a",
+    "after" : "host-b",
+    "addedFragments" : [ ],
+    "removedFragments" : [ ],
+    "volatile" : false
+  } ],
+  "hiddenChanges" : [ ],
+  "warnings" : [ ],
+  "errors" : [ ],
+  "matchingDecisions" : [ ]
+}

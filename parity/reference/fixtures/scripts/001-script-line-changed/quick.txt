@@ -1,0 +1,24 @@
+Transformation: after
+Result: changed  |  Mode: quick
+
+Summary
+  Functional: 1
+  Layout: 0
+  Metadata: 0
+  Configuration: 0
+  Potentially functional: 0
+  Unknown: 0
+  Hidden by quick mode: 4
+
+MODIFIED STEP
+  Normalize Customer Code [ScriptValueMod]
+
+  Script 1
+    Script changed:
+    - NORMALIZED_CODE = CUSTOMER_CODE.trim();
+    + NORMALIZED_CODE = CUSTOMER_CODE.trim().toUpperCase();
+
+HIDDEN BY QUICK MODE
+  4 metadata changes
+  (run with --mode advanced to show everything)
+

@@ -1,0 +1,17 @@
+Transformation: probe
+Result: changed  |  Mode: quick
+
+Summary
+  Functional: 1
+  Layout: 0
+  Metadata: 0
+  Configuration: 0
+  Potentially functional: 0
+  Unknown: 0
+
+CONNECTIONS
+  probe_db — Password:
+    - [REDACTED]
+    + [REDACTED]
+
+

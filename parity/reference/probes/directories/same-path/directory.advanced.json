@@ -1,0 +1,171 @@
+{
+  "schemaVersion" : 1,
+  "scope" : "directory",
+  "summary" : {
+    "added" : 0,
+    "removed" : 0,
+    "renamed" : 0,
+    "modified" : 1,
+    "unchanged" : 1,
+    "error" : 0
+  },
+  "warnings" : [ ],
+  "files" : [ {
+    "beforePath" : "a.ktr",
+    "afterPath" : "a.ktr",
+    "status" : "modified",
+    "method" : "path",
+    "comparison" : {
+      "schemaVersion" : 1,
+      "mode" : "advanced",
+      "result" : "changed",
+      "summary" : {
+        "functional" : 1,
+        "layout" : 0,
+        "metadata" : 0,
+        "configuration" : 0,
+        "potentiallyFunctional" : 0,
+        "unknown" : 0
+      },
+      "hidden" : {
+        "count" : 0,
+        "byClassification" : { }
+      },
+      "metadata" : {
+        "beforeTransformation" : "flow-a",
+        "afterTransformation" : "flow-a",
+        "beforeSteps" : "2",
+        "afterSteps" : "2",
+        "documentType" : "transformation"
+      },
+      "graph" : {
+        "steps" : [ {
+          "logicalId" : "L1",
+          "beforeName" : "Generate rows",
+          "afterName" : "Generate rows",
+          "type" : "RowGenerator",
+          "beforeX" : 100,
+          "beforeY" : 100,
+          "afterX" : 100,
+          "afterY" : 100,
+          "status" : "modified",
+          "adapter" : "ConfiguredStepAdapter",
+          "changeCount" : 1
+        }, {
+          "logicalId" : "L2",
+          "beforeName" : "Sink",
+          "afterName" : "Sink",
+          "type" : "Dummy",
+          "beforeX" : 300,
+          "beforeY" : 100,
+          "afterX" : 300,
+          "afterY" : 100,
+          "status" : "unchanged",
+          "adapter" : "generic",
+          "changeCount" : 0
+        } ],
+        "hops" : [ {
+          "fromLogicalId" : "L1",
+          "toLogicalId" : "L2",
+          "fromName" : "Generate rows",
+          "toName" : "Sink",
+          "status" : "unchanged",
+          "enabled" : true
+        } ]
+      },
+      "changes" : [ {
+        "id" : "c1",
+        "logicalId" : "L1",
+        "kind" : "field_property_changed",
+        "classification" : "functional",
+        "entity" : "step",
+        "stepType" : "RowGenerator",
+        "stepName" : "Generate rows",
+        "beforeName" : null,
+        "afterName" : null,
+        "fromStep" : null,
+        "toStep" : null,
+        "section" : "fields",
+        "field" : "CODE",
+        "property" : "nullif",
+        "before" : "X-1",
+        "after" : "X-9",
+        "addedFragments" : [ ],
+        "removedFragments" : [ ],
+        "volatile" : false
+      } ],
+      "hiddenChanges" : [ ],
+      "warnings" : [ ],
+      "errors" : [ ],
+      "matchingDecisions" : [ {
+        "before" : "Generate rows",
+        "after" : "Generate rows",
+        "method" : "name",
+        "score" : 1.0,
+        "detail" : null
+      }, {
+        "before" : "Sink",
+        "after" : "Sink",
+        "method" : "name",
+        "score" : 1.0,
+        "detail" : null
+      } ]
+    }
+  }, {
+    "beforePath" : "b.ktr",
+    "afterPath" : "b.ktr",
+    "status" : "unchanged",
+    "method" : "path",
+    "comparison" : {
+      "schemaVersion" : 1,
+      "mode" : "advanced",
+      "result" : "unchanged",
+      "summary" : {
+        "functional" : 0,
+        "layout" : 0,
+        "metadata" : 0,
+        "configuration" : 0,
+        "potentiallyFunctional" : 0,
+        "unknown" : 0
+      },
+      "hidden" : {
+        "count" : 0,
+        "byClassification" : { }
+      },
+      "metadata" : {
+        "beforeTransformation" : "flow-b",
+        "afterTransformation" : "flow-b",
+        "beforeSteps" : "1",
+        "afterSteps" : "1",
+        "documentType" : "transformation"
+      },
+      "graph" : {
+        "steps" : [ {
+          "logicalId" : "L1",
+          "beforeName" : "Read",
+          "afterName" : "Read",
+          "type" : "TableInput",
+          "beforeX" : 10,
+          "beforeY" : 10,
+          "afterX" : 10,
+          "afterY" : 10,
+          "status" : "unchanged",
+          "adapter" : "TableInputAdapter",
+          "changeCount" : 0
+        } ],
+        "hops" : [ ]
+      },
+      "changes" : [ ],
+      "hiddenChanges" : [ ],
+      "warnings" : [ ],
+      "errors" : [ ],
+      "matchingDecisions" : [ {
+        "before" : "Read",
+        "after" : "Read",
+        "method" : "name",
+        "score" : 1.0,
+        "detail" : null
+      } ]
+    }
+  } ]
+}

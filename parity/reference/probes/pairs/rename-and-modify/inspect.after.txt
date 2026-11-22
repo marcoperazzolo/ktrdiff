@@ -1,0 +1,8 @@
+Transformation: probe
+Steps: 2
+  Renamed                                  [RowGenerator]           adapter=ConfiguredStepAdapter pos=10,10
+  Sink                                     [Dummy]                  adapter=generic pos=300,10
+Hops: 1
+  Renamed -> Sink
+Notes: 0
+Connections: 0

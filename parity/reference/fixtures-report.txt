@@ -1,0 +1,17 @@
+basic/001-identical                                     [basic-001]  PASS
+filters/001-minimum-age-18-to-21                        [filters-001] PASS
+hops/001-target-changed                                 [hops-001]   PASS
+invalid/001-invalid-xml                                 [invalid-001] PASS
+layout/001-step-moved                                   [layout-001] PASS
+mixed/001-functional-and-layout                         [mixed-001]  PASS
+scripts/001-script-line-changed                         [scripts-001] PASS
+select-values/001-type-string-to-none                   [select-values-001] PASS
+sql/001-where-condition-changed                         [sql-001]    PASS
+steps/001-step-added                                    [steps-001]  KNOWN-ISSUE
+      reason: expected.yml (id steps-001) declares the added step as "Audit Rows", but the KTR pair adds a step named "Dummy (do nothing)" — the step was never renamed in Spoon.
+steps/002-step-removed                                  [steps-002]  PASS
+steps/003-step-renamed                                  [steps-003]  PASS
+steps/004-step-renamed-and-modified                     [steps-004]  PASS
+xml/001-unknown-property-added                          [xml-001]    PASS
+
+Fixtures: 13 passed, 0 failed, 1 known-issue, 14 total

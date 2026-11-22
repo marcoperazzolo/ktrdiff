@@ -1,0 +1,51 @@
+{
+  "schemaVersion" : 1,
+  "mode" : "quick",
+  "result" : "unchanged",
+  "summary" : {
+    "functional" : 0,
+    "layout" : 0,
+    "metadata" : 0,
+    "configuration" : 0,
+    "potentiallyFunctional" : 0,
+    "unknown" : 0
+  },
+  "hidden" : {
+    "count" : 0,
+    "byClassification" : { }
+  },
+  "metadata" : {
+    "beforeTransformation" : "probe",
+    "afterTransformation" : "probe",
+    "beforeSteps" : "1",
+    "afterSteps" : "1",
+    "documentType" : "transformation"
+  },
+  "graph" : {
+    "steps" : [ {
+      "logicalId" : "L1",
+      "beforeName" : "Sink",
+      "afterName" : "Sink",
+      "type" : "Dummy",
+      "beforeX" : 10,
+      "beforeY" : 10,
+      "afterX" : 10,
+      "afterY" : 10,
+      "status" : "unchanged",
+      "adapter" : "generic",
+      "changeCount" : 0
+    } ],
+    "hops" : [ ]
+  },
+  "changes" : [ ],
+  "hiddenChanges" : [ ],
+  "warnings" : [ ],
+  "errors" : [ ],
+  "matchingDecisions" : [ {
+    "before" : "Sink",
+    "after" : "Sink",
+    "method" : "name",
+    "score" : 1.0,
+    "detail" : null
+  } ]
+}

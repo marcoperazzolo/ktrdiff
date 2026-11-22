@@ -1,0 +1,27 @@
+{
+  "name": "ktrdiff",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "typecheck": "tsc -p packages/core && tsc -p packages/cli && tsc -p parity",
+    "check:core": "node scripts/check-core-purity.mjs",
+    "check:ported": "node scripts/check-ported-tests.mjs",
+    "test": "vitest run --project core --project cli",
+    "build:cli": "node packages/cli/build.mjs",
+    "verify": "npm run typecheck && npm run check:core && npm test && npm run build:cli",
+    "oracle:build": "node parity/build-oracle.mjs",
+    "oracle:record": "node parity/record.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "esbuild": "0.28.2",
+    "typescript": "5.9.3",
+    "vitest": "4.0.18"
+  }
+}

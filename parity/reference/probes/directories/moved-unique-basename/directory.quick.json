@@ -1,0 +1,115 @@
+{
+  "schemaVersion" : 1,
+  "scope" : "directory",
+  "summary" : {
+    "added" : 0,
+    "removed" : 0,
+    "renamed" : 1,
+    "modified" : 0,
+    "unchanged" : 0,
+    "error" : 0
+  },
+  "warnings" : [ ],
+  "files" : [ {
+    "beforePath" : "one/flow.ktr",
+    "afterPath" : "two/flow.ktr",
+    "status" : "renamed",
+    "method" : "basename",
+    "comparison" : {
+      "schemaVersion" : 1,
+      "mode" : "quick",
+      "result" : "changed",
+      "summary" : {
+        "functional" : 1,
+        "layout" : 0,
+        "metadata" : 0,
+        "configuration" : 0,
+        "potentiallyFunctional" : 0,
+        "unknown" : 0
+      },
+      "hidden" : {
+        "count" : 0,
+        "byClassification" : { }
+      },
+      "metadata" : {
+        "beforeTransformation" : "flow-a",
+        "afterTransformation" : "flow-a",
+        "beforeSteps" : "2",
+        "afterSteps" : "2",
+        "documentType" : "transformation"
+      },
+      "graph" : {
+        "steps" : [ {
+          "logicalId" : "L1",
+          "beforeName" : "Generate rows",
+          "afterName" : "Generate rows",
+          "type" : "RowGenerator",
+          "beforeX" : 100,
+          "beforeY" : 100,
+          "afterX" : 100,
+          "afterY" : 100,
+          "status" : "modified",
+          "adapter" : "ConfiguredStepAdapter",
+          "changeCount" : 1
+        }, {
+          "logicalId" : "L2",
+          "beforeName" : "Sink",
+          "afterName" : "Sink",
+          "type" : "Dummy",
+          "beforeX" : 300,
+          "beforeY" : 100,
+          "afterX" : 300,
+          "afterY" : 100,
+          "status" : "unchanged",
+          "adapter" : "generic",
+          "changeCount" : 0
+        } ],
+        "hops" : [ {
+          "fromLogicalId" : "L1",
+          "toLogicalId" : "L2",
+          "fromName" : "Generate rows",
+          "toName" : "Sink",
+          "status" : "unchanged",
+          "enabled" : true
+        } ]
+      },
+      "changes" : [ {
+        "id" : "c1",
+        "logicalId" : "L1",
+        "kind" : "step_property_changed",
+        "classification" : "functional",
+        "entity" : "step",
+        "stepType" : "RowGenerator",
+        "stepName" : "Generate rows",
+        "beforeName" : null,
+        "afterName" : null,
+        "fromStep" : null,
+        "toStep" : null,
+        "section" : "limit",
+        "field" : null,
+        "property" : "limit",
+        "before" : "3",
+        "after" : "5",
+        "addedFragments" : [ ],
+        "removedFragments" : [ ],
+        "volatile" : false
+      } ],
+      "hiddenChanges" : [ ],
+      "warnings" : [ ],
+      "errors" : [ ],
+      "matchingDecisions" : [ {
+        "before" : "Generate rows",
+        "after" : "Generate rows",
+        "method" : "name",
+        "score" : 1.0,
+        "detail" : null
+      }, {
+        "before" : "Sink",
+        "after" : "Sink",
+        "method" : "name",
+        "score" : 1.0,
+        "detail" : null
+      } ]
+    }
+  } ]
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>probe</name>
+    <description/>
+  </info>
+  <notepads>
+  </notepads>
+  <step>
+    <name>Trailing newline
+</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+    <GUI><xloc>10</xloc><yloc>10</yloc><draw>Y</draw></GUI>
+  </step>
+  <step>
+    <name>Trailing nbsp </name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+    <GUI><xloc>50</xloc><yloc>10</yloc><draw>Y</draw></GUI>
+  </step>
+  <order>
+    <hop><from>Trailing newline
+</from><to>Trailing nbsp </to><enabled>Y</enabled></hop>
+  </order>
+</transformation>

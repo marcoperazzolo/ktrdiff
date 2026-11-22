@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<!DOCTYPE transformation [<!ENTITY probe "value">]>
+<transformation><info><name>probe</name></info><x>&probe;</x></transformation>

@@ -1,0 +1,32 @@
+schema_version: 1
+
+fixture:
+  id: "steps-003"
+  category: "steps"
+  title: "Select Values step renamed"
+  seed: "canonical-flow.ktr"
+  pentaho_version: "9.4.0.0-343"
+  manually_edited: false
+
+expected:
+  result: changed
+  strict: true
+  error_code: null
+  changes:
+    - kind: "step_renamed"
+      classification: "functional"
+      entity: "step"
+      step_type: "SelectValues"
+      step_name: null
+      before_name: "Select Customer Fields"
+      after_name: "Normalize Customer Fields"
+      from_step: null
+      to_step: null
+      section: "identity"
+      field: null
+      property: "name"
+      before: "Select Customer Fields"
+      after: "Normalize Customer Fields"
+      added_contains: []
+      removed_contains: []
+  allow_extra: []

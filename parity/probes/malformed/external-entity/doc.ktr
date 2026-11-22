@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<!DOCTYPE transformation [<!ENTITY ext SYSTEM "file:///nonexistent/ktrdiff-probe.txt">]>
+<transformation><info><name>probe</name></info><x>&ext;</x></transformation>
