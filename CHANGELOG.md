@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1-dev
+
+* Documentation: no more links to files that are not part of this repository.
+
 ## 0.3.0-dev
 
 First public version of the KTRDiff engine.

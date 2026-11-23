@@ -38,10 +38,10 @@ The engine is TypeScript ([ADR 004](adr/004-typescript-client-side-engine.md)); 
 |---|---|
 | `packages/core` (`@ktrdiff/core`) | pure engine, synchronous and deterministic, ECMAScript built-ins plus `TextDecoder` only (no Node/DOM API, checked by `typecheck` and `check:core`). `src/` folders: `util` (Java-semantics helpers, SHA-256), `xml` (strict tokenizer, limits), `model`, `parser` (KTR/KJB/KDB), `normalize`, `match`, `adapters` (incl. the Myers text diff), `engine` (file and directory engines, per-file summary), `profile` (config and modes), `render` (text, JSON, HTML, directory JSON). Public API in `src/index.ts` |
 | `packages/cli` (`@ktrdiff/cli`) | Node CLI: `compare` (default), `directory`, `inspect`, `validate`, `fixtures`, `git`, `git-diff`, `git-install`; YAML configuration (`yaml`, bundled); `build.mjs` produces the single file `dist/ktrdiff.mjs` |
-| `apps/web` (`@ktrdiff/web`) | Angular 21 app; `src/engine/` runs the core in a Web Worker (see [web-ui.md](web-ui.md)); static build, strict CSP (`_headers`) |
+| `apps/web` (`@ktrdiff/web`) | Angular 21 app; `src/engine/` runs the core in a Web Worker (see the web UI notes); static build, strict CSP (`_headers`) |
 | `parity/` | oracle tooling: builds the `v0.2.0` jar, records its outputs (`reference/` for fixtures and probes, `private-fixtures/.parity/` for local cases) and the shared comparison used by the parity tests |
 
-`deploy/cloudflare` publishes the build as static assets (see [cloudflare-deployment.md](cloudflare-deployment.md)).
+`deploy/cloudflare` publishes the build as static assets (see the deployment notes).
 
 ```text
                         ┌──────────────── packages/core (pure, no I/O) ────────────────┐

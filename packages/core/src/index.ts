@@ -9,7 +9,7 @@ import { parseTransformationRoot } from './parser/ktr-parser.ts';
 import { parseXmlBytes, parseXmlString } from './xml/secure-xml.ts';
 import type { XmlNode } from './xml/xml-node.ts';
 
-export const CORE_VERSION = '0.3.0-dev';
+export const CORE_VERSION = '0.3.1-dev';
 
 
 /** The part of DiffConfig the parsers read (DiffConfig itself arrives in step F1). */

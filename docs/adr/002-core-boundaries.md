@@ -3,7 +3,7 @@
 ## Status
 Accepted (2026-07-14)
 
-Frontend choice superseded by [ADR 003](003-angular-frontend.md): Angular replaces React/Vite.
+Frontend choice superseded by ADR 003 (Angular replaces React/Vite).
 
 ## Context
 The project brief sketches up to eight Maven modules (`ktrdiff-model`, `ktrdiff-parser`,
